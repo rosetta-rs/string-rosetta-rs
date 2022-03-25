@@ -10,8 +10,8 @@ mod fixture;
 
 type StringCow<'s> = std::borrow::Cow<'s, str>;
 
-fn bench_clone(c: &mut Criterion) {
-    let mut group = c.benchmark_group("clone");
+fn bench_new(c: &mut Criterion) {
+    let mut group = c.benchmark_group("new");
     for fixture in fixture::SAMPLES {
         let len = fixture.len();
         group.throughput(Throughput::Bytes(len as u64));
@@ -103,5 +103,5 @@ fn bench_clone(c: &mut Criterion) {
     group.finish();
 }
 
-criterion_group!(benches, bench_clone);
+criterion_group!(benches, bench_new);
 criterion_main!(benches);
