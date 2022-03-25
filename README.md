@@ -14,6 +14,16 @@ Name                                                  | Heap  | Small-string | `
 [`smartstring`](https://crates.io/crates/smartstring) | **Y** | 23 bytes     | N              | **Y**   |
 [`smol_str`](https://crates.io/crates/smol_str)       | **Y** | 22 bytes     | N              | N       | O(1) clone, Whitespace storage optimizations
 
+Suggestions:
+- Generally, `String`
+- If you deal mostly with string literals but want some flexibility (like
+  [clap](https://github.com/clap-rs/clap/)), generally you'll want
+  `Cow<'static, str`>
+- If a profiler says your strings are a problem:
+  - Try different crates and settings for that crate out with a profiler
+  - O(1) clone tends to be better with large allocations
+  - For short-lived programs, look into string interning
+
 # Results
 
 `new`:
