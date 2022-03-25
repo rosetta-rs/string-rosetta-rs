@@ -10,7 +10,7 @@ Name                                                  | Heap  | Small-string | `
 `Cow<'static, str>`                                   | **Y** | N            | **Y**          | N       |
 [`compact_str`](https://crates.io/crates/compact_str) | **Y** | 24 bytes     | N              | N       |
 [`flexstr`](https://crates.io/crates/flexstr)         | **Y** | 22 bytes     | **Y**          | N       | O(1) clone
-[`kstring`](https://crates.io/crates/kstring)         | **Y** | 15 bytes     | **Y**          | N       | Optional O(1) clone, optional 22 byte small string
+[`kstring`](https://crates.io/crates/kstring)         | **Y** | 15 bytes     | **Y**          | N       | Optional O(1) clone, optional 22 byte small string, Ref/Cow API for preserving `&'static str`
 [`smartstring`](https://crates.io/crates/smartstring) | **Y** | 23 bytes     | N              | **Y**   |
 [`smol_str`](https://crates.io/crates/smol_str)       | **Y** | 22 bytes     | N              | N       | O(1) clone, Whitespace storage optimizations
 
