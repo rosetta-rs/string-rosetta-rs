@@ -12,7 +12,7 @@ smartstring = "1.0.1"
 smol_str = "0.1.21"
 
 [dev-dependencies]
-criterion = "0.3.5"
+criterion = { version = "0.3.5", features = ["html_reports"] }
 
 [[bench]]
 name = "new"
