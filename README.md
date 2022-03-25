@@ -20,10 +20,10 @@ Name                                                  | Heap  | Small-string | `
 [![`new`](runs/2022-03-25/new/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2022-03-25/new/report/index.html)
 
 `clone`:
-[![`clone`](runs/2022-03-25/new/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2022-03-25/clone/report/index.html)
+[![`clone`](runs/2022-03-25/clone/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2022-03-25/clone/report/index.html)
 
 `access`:
-[![`access`](runs/2022-03-25/new/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2022-03-25/access/report/index.html)
+[![`access`](runs/2022-03-25/access/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2022-03-25/access/report/index.html)
 
 # Special Thanks
 
