@@ -73,15 +73,6 @@ fn bench_access(c: &mut Criterion) {
             },
         );
         group.bench_with_input(
-            BenchmarkId::new("flexstr::SharedStr::from_heap", len),
-            &len,
-            |b, _| {
-                let uut = flexstr::SharedStr::from_heap(std::sync::Arc::from(*fixture));
-                let uut = criterion::black_box(uut);
-                b.iter(|| uut.is_empty())
-            },
-        );
-        group.bench_with_input(
             BenchmarkId::new("KString::from_static", len),
             &len,
             |b, _| {
