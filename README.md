@@ -16,6 +16,7 @@ Name                                                 | Heap  | Small-string | `&
 
 # Results
 
+[![Benchmarks](runs/2022-03-25/new/report/lines.svg)](runs/2022-03-25/report/index.html)
 
 # Special Thanks
 
