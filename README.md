@@ -8,7 +8,7 @@ Name                                                  | Heap  | Small-string | `
 ------------------------------------------------------|-------|--------------|----------------|---------|-----
 `String`                                              | **Y** | N            | N              | **Y**   | Universal
 `Cow<'static, str>`                                   | **Y** | N            | **Y**          | N       |
-[`compact_str`](https://crates.io/crates/compact_str) | **Y** | 24 bytes     | N              | N       |
+[`compact_str`](https://crates.io/crates/compact_str) | **Y** | 24 bytes     | N              | **Y**   |
 [`flexstr`](https://crates.io/crates/flexstr)         | **Y** | 22 bytes     | **Y**          | N       | O(1) clone
 [`kstring`](https://crates.io/crates/kstring)         | **Y** | 15 bytes     | **Y**          | N       | Optional O(1) clone, optional 22 byte small string, Ref/Cow API for preserving `&'static str`
 [`smartstring`](https://crates.io/crates/smartstring) | **Y** | 23 bytes     | N              | **Y**   |
