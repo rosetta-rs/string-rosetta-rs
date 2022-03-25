@@ -17,7 +17,7 @@ Name                                                 | Heap  | Small-string | `&
 # Results
 
 `new`:
-![`new`](runs/2022-03-25/new/report/lines.svg)
+[![`new`](runs/2022-03-25/new/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2022-03-25/new/report/index.html))
 
 [More details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2022-03-25/report/index.html)
 
