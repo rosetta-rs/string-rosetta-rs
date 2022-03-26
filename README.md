@@ -26,14 +26,20 @@ Suggestions:
 
 # Results
 
-`new`:
+`new` summary:
 [![`new`](runs/2022-03-25/new/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2022-03-25/new/report/index.html)
 
-`clone`:
+See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2022-03-25/new/report/index.html)
+
+`clone` summary:
 [![`clone`](runs/2022-03-25/clone/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2022-03-25/clone/report/index.html)
 
-`access`:
+See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2022-03-25/clone/report/index.html)
+
+`access` summary:
 [![`access`](runs/2022-03-25/access/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2022-03-25/access/report/index.html)
+
+See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2022-03-25/access/report/index.html)
 
 # Special Thanks
 
