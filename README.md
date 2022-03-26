@@ -21,7 +21,7 @@ Suggestions:
   `Cow<'static, str`>
 - If a profiler says your strings are a problem:
   - Try different crates and settings for that crate out with a profiler
-  - O(1) clone tends to be better with large allocations
+  - O(1) clones are important when doing a lot of clones.  For one-off allocations, they are slower.
   - For short-lived programs, look into string interning
 
 Terms:
