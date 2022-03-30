@@ -15,11 +15,6 @@ fn bench_clone(c: &mut Criterion) {
     for fixture in fixture::SAMPLES {
         let len = fixture.len();
         group.throughput(Throughput::Bytes(len as u64));
-        group.bench_with_input(BenchmarkId::new("&'static str", len), &len, |b, _| {
-            let uut = *fixture;
-            let uut = criterion::black_box(uut);
-            b.iter(|| uut.clone())
-        });
         group.bench_with_input(BenchmarkId::new("String", len), &len, |b, _| {
             let uut = String::from(*fixture);
             let uut = criterion::black_box(uut);
@@ -35,15 +30,6 @@ fn bench_clone(c: &mut Criterion) {
             let uut = criterion::black_box(uut);
             b.iter(|| uut.clone())
         });
-        group.bench_with_input(
-            BenchmarkId::new("StringCow::Borrowed", len),
-            &len,
-            |b, _| {
-                let uut = StringCow::Borrowed(*fixture);
-                let uut = criterion::black_box(uut);
-                b.iter(|| uut.clone())
-            },
-        );
         group.bench_with_input(BenchmarkId::new("StringCow::Owned", len), &len, |b, _| {
             let uut = StringCow::Owned(String::from(*fixture));
             let uut = criterion::black_box(uut);
@@ -55,28 +41,10 @@ fn bench_clone(c: &mut Criterion) {
             b.iter(|| uut.clone())
         });
         group.bench_with_input(
-            BenchmarkId::new("flexstr::SharedStr::from_static", len),
-            &len,
-            |b, _| {
-                let uut = flexstr::SharedStr::from_static(*fixture);
-                let uut = criterion::black_box(uut);
-                b.iter(|| uut.clone())
-            },
-        );
-        group.bench_with_input(
             BenchmarkId::new("flexstr::SharedStr::from_ref", len),
             &len,
             |b, _| {
                 let uut = flexstr::SharedStr::from_ref(*fixture);
-                let uut = criterion::black_box(uut);
-                b.iter(|| uut.clone())
-            },
-        );
-        group.bench_with_input(
-            BenchmarkId::new("KString::from_static", len),
-            &len,
-            |b, _| {
-                let uut = kstring::KString::from_static(*fixture);
                 let uut = criterion::black_box(uut);
                 b.iter(|| uut.clone())
             },
@@ -113,5 +81,46 @@ fn bench_clone(c: &mut Criterion) {
     group.finish();
 }
 
-criterion_group!(benches, bench_clone);
+fn bench_clone_static(c: &mut Criterion) {
+    let mut group = c.benchmark_group("clone_static");
+    for fixture in fixture::SAMPLES {
+        let len = fixture.len();
+        group.throughput(Throughput::Bytes(len as u64));
+        group.bench_with_input(BenchmarkId::new("&'static str", len), &len, |b, _| {
+            let uut = *fixture;
+            let uut = criterion::black_box(uut);
+            b.iter(|| uut.clone())
+        });
+        group.bench_with_input(
+            BenchmarkId::new("StringCow::Borrowed", len),
+            &len,
+            |b, _| {
+                let uut = StringCow::Borrowed(*fixture);
+                let uut = criterion::black_box(uut);
+                b.iter(|| uut.clone())
+            },
+        );
+        group.bench_with_input(
+            BenchmarkId::new("flexstr::SharedStr::from_static", len),
+            &len,
+            |b, _| {
+                let uut = flexstr::SharedStr::from_static(*fixture);
+                let uut = criterion::black_box(uut);
+                b.iter(|| uut.clone())
+            },
+        );
+        group.bench_with_input(
+            BenchmarkId::new("KString::from_static", len),
+            &len,
+            |b, _| {
+                let uut = kstring::KString::from_static(*fixture);
+                let uut = criterion::black_box(uut);
+                b.iter(|| uut.clone())
+            },
+        );
+    }
+    group.finish();
+}
+
+criterion_group!(benches, bench_clone, bench_clone_static);
 criterion_main!(benches);
