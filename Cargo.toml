@@ -5,7 +5,7 @@ edition = "2021"
 publish = false
 
 [dependencies]
-compact_str = "0.3.2"
+compact_str = "0.4"
 flexstr = "0.9.2"
 kstring = "2.0.0"
 smartstring = "1.0.1"
