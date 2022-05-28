@@ -31,9 +31,9 @@ fn bench_new(c: &mut Criterion) {
             let fixture = criterion::black_box(*fixture);
             b.iter(|| StringCow::Owned(String::from(fixture)))
         });
-        group.bench_with_input(BenchmarkId::new("CompactStr::new", len), &len, |b, _| {
+        group.bench_with_input(BenchmarkId::new("CompactString::new", len), &len, |b, _| {
             let fixture = criterion::black_box(*fixture);
-            b.iter(|| compact_str::CompactStr::new(fixture))
+            b.iter(|| compact_str::CompactString::new(fixture))
         });
         group.bench_with_input(
             BenchmarkId::new("flexstr::SharedStr::from_ref", len),

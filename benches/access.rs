@@ -35,8 +35,8 @@ fn bench_access(c: &mut Criterion) {
             let uut = criterion::black_box(uut);
             b.iter(|| uut.is_empty())
         });
-        group.bench_with_input(BenchmarkId::new("CompactStr::new", len), &len, |b, _| {
-            let uut = compact_str::CompactStr::new(fixture);
+        group.bench_with_input(BenchmarkId::new("CompactString::new", len), &len, |b, _| {
+            let uut = compact_str::CompactString::new(fixture);
             let uut = criterion::black_box(uut);
             b.iter(|| uut.is_empty())
         });
