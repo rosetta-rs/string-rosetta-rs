@@ -1,4 +1,4 @@
-# Rust String Parsing Benchmarks
+# Rust String Benchmarks
 
 This repo tries to assess Rust string types.
 
