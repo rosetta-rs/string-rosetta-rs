@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Index - Criterion.rs</title>
+    <style type="text/css">
+        body {
+            font: 14px Helvetica Neue;
+            text-rendering: optimizelegibility;
+        }
+
+        .body {
+            width: 960px;
+            margin: auto;
+        }
+
+        a:link {
+            color: #1F78B4;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 300;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        #footer {
+            height: 40px;
+            background: #888;
+            color: white;
+            font-size: larger;
+            font-weight: 300;
+        }
+
+        #footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        #footer p {
+            text-align: center
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <h2>Criterion.rs Benchmark Index</h2>
+        See individual benchmark pages below for more details.
+        <ul>
+            <li><a href="../access/report/index.html">access</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../access/Arc_str_/report/index.html">Arc&lt;str&gt;</a></th>
+                            <th><a href="../access/ArcStr__from/report/index.html">ArcStr::from</a></th>
+                            <th><a href="../access/Box_str_/report/index.html">Box&lt;str&gt;</a></th>
+                            <th><a href="../access/CompactString__new/report/index.html">CompactString::new</a></th>
+                            <th><a href="../access/HipStr__from/report/index.html">HipStr::from</a></th>
+                            <th><a href="../access/ImString__from/report/index.html">ImString::from</a></th>
+                            <th><a href="../access/KString__from_ref/report/index.html">KString::from_ref</a></th>
+                            <th><a href="../access/KString__from_string/report/index.html">KString::from_string</a></th>
+                            <th><a href="../access/SmolStr__new/report/index.html">SmolStr::new</a></th>
+                            <th><a href="../access/String/report/index.html">String</a></th>
+                            <th><a href="../access/StringCow__Owned/report/index.html">StringCow::Owned</a></th>
+                            <th><a href="../access/flexstr__SharedStr__from_ref/report/index.html">flexstr::SharedStr::from_ref</a></th>
+                            <th><a href="../access/smartstring__String__new/report/index.html">smartstring::String::new</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../access/0/report/index.html">0</a></th>
+                            <td><a href="../access/Arc_str_/0/report/index.html">access/Arc&lt;str&gt;/0</a></td>
+                            <td><a href="../access/ArcStr__from/0/report/index.html">access/ArcStr::from/0</a></td>
+                            <td><a href="../access/Box_str_/0/report/index.html">access/Box&lt;str&gt;/0</a></td>
+                            <td><a href="../access/CompactString__new/0/report/index.html">access/CompactString::new/0</a></td>
+                            <td><a href="../access/HipStr__from/0/report/index.html">access/HipStr::from/0</a></td>
+                            <td><a href="../access/ImString__from/0/report/index.html">access/ImString::from/0</a></td>
+                            <td><a href="../access/KString__from_ref/0/report/index.html">access/KString::from_ref/0</a></td>
+                            <td><a href="../access/KString__from_string/0/report/index.html">access/KString::from_string/0</a></td>
+                            <td><a href="../access/SmolStr__new/0/report/index.html">access/SmolStr::new/0</a></td>
+                            <td><a href="../access/String/0/report/index.html">access/String/0</a></td>
+                            <td><a href="../access/StringCow__Owned/0/report/index.html">access/StringCow::Owned/0</a></td>
+                            <td><a href="../access/flexstr__SharedStr__from_ref/0/report/index.html">access/flexstr::SharedStr::from_ref/0</a></td>
+                            <td><a href="../access/smartstring__String__new/0/report/index.html">access/smartstring::String::new/0</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access/1/report/index.html">1</a></th>
+                            <td><a href="../access/Arc_str_/1/report/index.html">access/Arc&lt;str&gt;/1</a></td>
+                            <td><a href="../access/ArcStr__from/1/report/index.html">access/ArcStr::from/1</a></td>
+                            <td><a href="../access/Box_str_/1/report/index.html">access/Box&lt;str&gt;/1</a></td>
+                            <td><a href="../access/CompactString__new/1/report/index.html">access/CompactString::new/1</a></td>
+                            <td><a href="../access/HipStr__from/1/report/index.html">access/HipStr::from/1</a></td>
+                            <td><a href="../access/ImString__from/1/report/index.html">access/ImString::from/1</a></td>
+                            <td><a href="../access/KString__from_ref/1/report/index.html">access/KString::from_ref/1</a></td>
+                            <td><a href="../access/KString__from_string/1/report/index.html">access/KString::from_string/1</a></td>
+                            <td><a href="../access/SmolStr__new/1/report/index.html">access/SmolStr::new/1</a></td>
+                            <td><a href="../access/String/1/report/index.html">access/String/1</a></td>
+                            <td><a href="../access/StringCow__Owned/1/report/index.html">access/StringCow::Owned/1</a></td>
+                            <td><a href="../access/flexstr__SharedStr__from_ref/1/report/index.html">access/flexstr::SharedStr::from_ref/1</a></td>
+                            <td><a href="../access/smartstring__String__new/1/report/index.html">access/smartstring::String::new/1</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access/15/report/index.html">15</a></th>
+                            <td><a href="../access/Arc_str_/15/report/index.html">access/Arc&lt;str&gt;/15</a></td>
+                            <td><a href="../access/ArcStr__from/15/report/index.html">access/ArcStr::from/15</a></td>
+                            <td><a href="../access/Box_str_/15/report/index.html">access/Box&lt;str&gt;/15</a></td>
+                            <td><a href="../access/CompactString__new/15/report/index.html">access/CompactString::new/15</a></td>
+                            <td><a href="../access/HipStr__from/15/report/index.html">access/HipStr::from/15</a></td>
+                            <td><a href="../access/ImString__from/15/report/index.html">access/ImString::from/15</a></td>
+                            <td><a href="../access/KString__from_ref/15/report/index.html">access/KString::from_ref/15</a></td>
+                            <td><a href="../access/KString__from_string/15/report/index.html">access/KString::from_string/15</a></td>
+                            <td><a href="../access/SmolStr__new/15/report/index.html">access/SmolStr::new/15</a></td>
+                            <td><a href="../access/String/15/report/index.html">access/String/15</a></td>
+                            <td><a href="../access/StringCow__Owned/15/report/index.html">access/StringCow::Owned/15</a></td>
+                            <td><a href="../access/flexstr__SharedStr__from_ref/15/report/index.html">access/flexstr::SharedStr::from_ref/15</a></td>
+                            <td><a href="../access/smartstring__String__new/15/report/index.html">access/smartstring::String::new/15</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access/22/report/index.html">22</a></th>
+                            <td><a href="../access/Arc_str_/22/report/index.html">access/Arc&lt;str&gt;/22</a></td>
+                            <td><a href="../access/ArcStr__from/22/report/index.html">access/ArcStr::from/22</a></td>
+                            <td><a href="../access/Box_str_/22/report/index.html">access/Box&lt;str&gt;/22</a></td>
+                            <td><a href="../access/CompactString__new/22/report/index.html">access/CompactString::new/22</a></td>
+                            <td><a href="../access/HipStr__from/22/report/index.html">access/HipStr::from/22</a></td>
+                            <td><a href="../access/ImString__from/22/report/index.html">access/ImString::from/22</a></td>
+                            <td><a href="../access/KString__from_ref/22/report/index.html">access/KString::from_ref/22</a></td>
+                            <td><a href="../access/KString__from_string/22/report/index.html">access/KString::from_string/22</a></td>
+                            <td><a href="../access/SmolStr__new/22/report/index.html">access/SmolStr::new/22</a></td>
+                            <td><a href="../access/String/22/report/index.html">access/String/22</a></td>
+                            <td><a href="../access/StringCow__Owned/22/report/index.html">access/StringCow::Owned/22</a></td>
+                            <td><a href="../access/flexstr__SharedStr__from_ref/22/report/index.html">access/flexstr::SharedStr::from_ref/22</a></td>
+                            <td><a href="../access/smartstring__String__new/22/report/index.html">access/smartstring::String::new/22</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access/23/report/index.html">23</a></th>
+                            <td><a href="../access/Arc_str_/23/report/index.html">access/Arc&lt;str&gt;/23</a></td>
+                            <td><a href="../access/ArcStr__from/23/report/index.html">access/ArcStr::from/23</a></td>
+                            <td><a href="../access/Box_str_/23/report/index.html">access/Box&lt;str&gt;/23</a></td>
+                            <td><a href="../access/CompactString__new/23/report/index.html">access/CompactString::new/23</a></td>
+                            <td><a href="../access/HipStr__from/23/report/index.html">access/HipStr::from/23</a></td>
+                            <td><a href="../access/ImString__from/23/report/index.html">access/ImString::from/23</a></td>
+                            <td><a href="../access/KString__from_ref/23/report/index.html">access/KString::from_ref/23</a></td>
+                            <td><a href="../access/KString__from_string/23/report/index.html">access/KString::from_string/23</a></td>
+                            <td><a href="../access/SmolStr__new/23/report/index.html">access/SmolStr::new/23</a></td>
+                            <td><a href="../access/String/23/report/index.html">access/String/23</a></td>
+                            <td><a href="../access/StringCow__Owned/23/report/index.html">access/StringCow::Owned/23</a></td>
+                            <td><a href="../access/flexstr__SharedStr__from_ref/23/report/index.html">access/flexstr::SharedStr::from_ref/23</a></td>
+                            <td><a href="../access/smartstring__String__new/23/report/index.html">access/smartstring::String::new/23</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access/24/report/index.html">24</a></th>
+                            <td><a href="../access/Arc_str_/24/report/index.html">access/Arc&lt;str&gt;/24</a></td>
+                            <td><a href="../access/ArcStr__from/24/report/index.html">access/ArcStr::from/24</a></td>
+                            <td><a href="../access/Box_str_/24/report/index.html">access/Box&lt;str&gt;/24</a></td>
+                            <td><a href="../access/CompactString__new/24/report/index.html">access/CompactString::new/24</a></td>
+                            <td><a href="../access/HipStr__from/24/report/index.html">access/HipStr::from/24</a></td>
+                            <td><a href="../access/ImString__from/24/report/index.html">access/ImString::from/24</a></td>
+                            <td><a href="../access/KString__from_ref/24/report/index.html">access/KString::from_ref/24</a></td>
+                            <td><a href="../access/KString__from_string/24/report/index.html">access/KString::from_string/24</a></td>
+                            <td><a href="../access/SmolStr__new/24/report/index.html">access/SmolStr::new/24</a></td>
+                            <td><a href="../access/String/24/report/index.html">access/String/24</a></td>
+                            <td><a href="../access/StringCow__Owned/24/report/index.html">access/StringCow::Owned/24</a></td>
+                            <td><a href="../access/flexstr__SharedStr__from_ref/24/report/index.html">access/flexstr::SharedStr::from_ref/24</a></td>
+                            <td><a href="../access/smartstring__String__new/24/report/index.html">access/smartstring::String::new/24</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access/25/report/index.html">25</a></th>
+                            <td><a href="../access/Arc_str_/25/report/index.html">access/Arc&lt;str&gt;/25</a></td>
+                            <td><a href="../access/ArcStr__from/25/report/index.html">access/ArcStr::from/25</a></td>
+                            <td><a href="../access/Box_str_/25/report/index.html">access/Box&lt;str&gt;/25</a></td>
+                            <td><a href="../access/CompactString__new/25/report/index.html">access/CompactString::new/25</a></td>
+                            <td><a href="../access/HipStr__from/25/report/index.html">access/HipStr::from/25</a></td>
+                            <td><a href="../access/ImString__from/25/report/index.html">access/ImString::from/25</a></td>
+                            <td><a href="../access/KString__from_ref/25/report/index.html">access/KString::from_ref/25</a></td>
+                            <td><a href="../access/KString__from_string/25/report/index.html">access/KString::from_string/25</a></td>
+                            <td><a href="../access/SmolStr__new/25/report/index.html">access/SmolStr::new/25</a></td>
+                            <td><a href="../access/String/25/report/index.html">access/String/25</a></td>
+                            <td><a href="../access/StringCow__Owned/25/report/index.html">access/StringCow::Owned/25</a></td>
+                            <td><a href="../access/flexstr__SharedStr__from_ref/25/report/index.html">access/flexstr::SharedStr::from_ref/25</a></td>
+                            <td><a href="../access/smartstring__String__new/25/report/index.html">access/smartstring::String::new/25</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access/64/report/index.html">64</a></th>
+                            <td><a href="../access/Arc_str_/64/report/index.html">access/Arc&lt;str&gt;/64</a></td>
+                            <td><a href="../access/ArcStr__from/64/report/index.html">access/ArcStr::from/64</a></td>
+                            <td><a href="../access/Box_str_/64/report/index.html">access/Box&lt;str&gt;/64</a></td>
+                            <td><a href="../access/CompactString__new/64/report/index.html">access/CompactString::new/64</a></td>
+                            <td><a href="../access/HipStr__from/64/report/index.html">access/HipStr::from/64</a></td>
+                            <td><a href="../access/ImString__from/64/report/index.html">access/ImString::from/64</a></td>
+                            <td><a href="../access/KString__from_ref/64/report/index.html">access/KString::from_ref/64</a></td>
+                            <td><a href="../access/KString__from_string/64/report/index.html">access/KString::from_string/64</a></td>
+                            <td><a href="../access/SmolStr__new/64/report/index.html">access/SmolStr::new/64</a></td>
+                            <td><a href="../access/String/64/report/index.html">access/String/64</a></td>
+                            <td><a href="../access/StringCow__Owned/64/report/index.html">access/StringCow::Owned/64</a></td>
+                            <td><a href="../access/flexstr__SharedStr__from_ref/64/report/index.html">access/flexstr::SharedStr::from_ref/64</a></td>
+                            <td><a href="../access/smartstring__String__new/64/report/index.html">access/smartstring::String::new/64</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access/500/report/index.html">500</a></th>
+                            <td><a href="../access/Arc_str_/500/report/index.html">access/Arc&lt;str&gt;/500</a></td>
+                            <td><a href="../access/ArcStr__from/500/report/index.html">access/ArcStr::from/500</a></td>
+                            <td><a href="../access/Box_str_/500/report/index.html">access/Box&lt;str&gt;/500</a></td>
+                            <td><a href="../access/CompactString__new/500/report/index.html">access/CompactString::new/500</a></td>
+                            <td><a href="../access/HipStr__from/500/report/index.html">access/HipStr::from/500</a></td>
+                            <td><a href="../access/ImString__from/500/report/index.html">access/ImString::from/500</a></td>
+                            <td><a href="../access/KString__from_ref/500/report/index.html">access/KString::from_ref/500</a></td>
+                            <td><a href="../access/KString__from_string/500/report/index.html">access/KString::from_string/500</a></td>
+                            <td><a href="../access/SmolStr__new/500/report/index.html">access/SmolStr::new/500</a></td>
+                            <td><a href="../access/String/500/report/index.html">access/String/500</a></td>
+                            <td><a href="../access/StringCow__Owned/500/report/index.html">access/StringCow::Owned/500</a></td>
+                            <td><a href="../access/flexstr__SharedStr__from_ref/500/report/index.html">access/flexstr::SharedStr::from_ref/500</a></td>
+                            <td><a href="../access/smartstring__String__new/500/report/index.html">access/smartstring::String::new/500</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../access_static/report/index.html">access_static</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../access_static/&amp;&#39;static str/report/index.html">&amp;&#39;static str</a></th>
+                            <th><a href="../access_static/KString__from_static/report/index.html">KString::from_static</a></th>
+                            <th><a href="../access_static/StringCow__Borrowed/report/index.html">StringCow::Borrowed</a></th>
+                            <th><a href="../access_static/flexstr__SharedStr__from_static/report/index.html">flexstr::SharedStr::from_static</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../access_static/0/report/index.html">0</a></th>
+                            <td><a href="../access_static/&amp;&#39;static str/0/report/index.html">access_static/&amp;&#39;static str/0</a></td>
+                            <td><a href="../access_static/KString__from_static/0/report/index.html">access_static/KString::from_static/0</a></td>
+                            <td><a href="../access_static/StringCow__Borrowed/0/report/index.html">access_static/StringCow::Borrowed/0</a></td>
+                            <td><a href="../access_static/flexstr__SharedStr__from_static/0/report/index.html">access_static/flexstr::SharedStr::from_static/0</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access_static/1/report/index.html">1</a></th>
+                            <td><a href="../access_static/&amp;&#39;static str/1/report/index.html">access_static/&amp;&#39;static str/1</a></td>
+                            <td><a href="../access_static/KString__from_static/1/report/index.html">access_static/KString::from_static/1</a></td>
+                            <td><a href="../access_static/StringCow__Borrowed/1/report/index.html">access_static/StringCow::Borrowed/1</a></td>
+                            <td><a href="../access_static/flexstr__SharedStr__from_static/1/report/index.html">access_static/flexstr::SharedStr::from_static/1</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access_static/15/report/index.html">15</a></th>
+                            <td><a href="../access_static/&amp;&#39;static str/15/report/index.html">access_static/&amp;&#39;static str/15</a></td>
+                            <td><a href="../access_static/KString__from_static/15/report/index.html">access_static/KString::from_static/15</a></td>
+                            <td><a href="../access_static/StringCow__Borrowed/15/report/index.html">access_static/StringCow::Borrowed/15</a></td>
+                            <td><a href="../access_static/flexstr__SharedStr__from_static/15/report/index.html">access_static/flexstr::SharedStr::from_static/15</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access_static/22/report/index.html">22</a></th>
+                            <td><a href="../access_static/&amp;&#39;static str/22/report/index.html">access_static/&amp;&#39;static str/22</a></td>
+                            <td><a href="../access_static/KString__from_static/22/report/index.html">access_static/KString::from_static/22</a></td>
+                            <td><a href="../access_static/StringCow__Borrowed/22/report/index.html">access_static/StringCow::Borrowed/22</a></td>
+                            <td><a href="../access_static/flexstr__SharedStr__from_static/22/report/index.html">access_static/flexstr::SharedStr::from_static/22</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access_static/23/report/index.html">23</a></th>
+                            <td><a href="../access_static/&amp;&#39;static str/23/report/index.html">access_static/&amp;&#39;static str/23</a></td>
+                            <td><a href="../access_static/KString__from_static/23/report/index.html">access_static/KString::from_static/23</a></td>
+                            <td><a href="../access_static/StringCow__Borrowed/23/report/index.html">access_static/StringCow::Borrowed/23</a></td>
+                            <td><a href="../access_static/flexstr__SharedStr__from_static/23/report/index.html">access_static/flexstr::SharedStr::from_static/23</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access_static/24/report/index.html">24</a></th>
+                            <td><a href="../access_static/&amp;&#39;static str/24/report/index.html">access_static/&amp;&#39;static str/24</a></td>
+                            <td><a href="../access_static/KString__from_static/24/report/index.html">access_static/KString::from_static/24</a></td>
+                            <td><a href="../access_static/StringCow__Borrowed/24/report/index.html">access_static/StringCow::Borrowed/24</a></td>
+                            <td><a href="../access_static/flexstr__SharedStr__from_static/24/report/index.html">access_static/flexstr::SharedStr::from_static/24</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access_static/25/report/index.html">25</a></th>
+                            <td><a href="../access_static/&amp;&#39;static str/25/report/index.html">access_static/&amp;&#39;static str/25</a></td>
+                            <td><a href="../access_static/KString__from_static/25/report/index.html">access_static/KString::from_static/25</a></td>
+                            <td><a href="../access_static/StringCow__Borrowed/25/report/index.html">access_static/StringCow::Borrowed/25</a></td>
+                            <td><a href="../access_static/flexstr__SharedStr__from_static/25/report/index.html">access_static/flexstr::SharedStr::from_static/25</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access_static/64/report/index.html">64</a></th>
+                            <td><a href="../access_static/&amp;&#39;static str/64/report/index.html">access_static/&amp;&#39;static str/64</a></td>
+                            <td><a href="../access_static/KString__from_static/64/report/index.html">access_static/KString::from_static/64</a></td>
+                            <td><a href="../access_static/StringCow__Borrowed/64/report/index.html">access_static/StringCow::Borrowed/64</a></td>
+                            <td><a href="../access_static/flexstr__SharedStr__from_static/64/report/index.html">access_static/flexstr::SharedStr::from_static/64</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../access_static/500/report/index.html">500</a></th>
+                            <td><a href="../access_static/&amp;&#39;static str/500/report/index.html">access_static/&amp;&#39;static str/500</a></td>
+                            <td><a href="../access_static/KString__from_static/500/report/index.html">access_static/KString::from_static/500</a></td>
+                            <td><a href="../access_static/StringCow__Borrowed/500/report/index.html">access_static/StringCow::Borrowed/500</a></td>
+                            <td><a href="../access_static/flexstr__SharedStr__from_static/500/report/index.html">access_static/flexstr::SharedStr::from_static/500</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../clone/report/index.html">clone</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../clone/Arc_str_/report/index.html">Arc&lt;str&gt;</a></th>
+                            <th><a href="../clone/ArcStr__from/report/index.html">ArcStr::from</a></th>
+                            <th><a href="../clone/Box_str_/report/index.html">Box&lt;str&gt;</a></th>
+                            <th><a href="../clone/CompactString__new/report/index.html">CompactString::new</a></th>
+                            <th><a href="../clone/HipStr__from/report/index.html">HipStr::from</a></th>
+                            <th><a href="../clone/ImString__from/report/index.html">ImString::from</a></th>
+                            <th><a href="../clone/KString__from_ref/report/index.html">KString::from_ref</a></th>
+                            <th><a href="../clone/KString__from_string/report/index.html">KString::from_string</a></th>
+                            <th><a href="../clone/SmolStr__new/report/index.html">SmolStr::new</a></th>
+                            <th><a href="../clone/String/report/index.html">String</a></th>
+                            <th><a href="../clone/StringCow__Owned/report/index.html">StringCow::Owned</a></th>
+                            <th><a href="../clone/flexstr__SharedStr__from_ref/report/index.html">flexstr::SharedStr::from_ref</a></th>
+                            <th><a href="../clone/smartstring__String__new/report/index.html">smartstring::String::new</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone/0/report/index.html">0</a></th>
+                            <td><a href="../clone/Arc_str_/0/report/index.html">clone/Arc&lt;str&gt;/0</a></td>
+                            <td><a href="../clone/ArcStr__from/0/report/index.html">clone/ArcStr::from/0</a></td>
+                            <td><a href="../clone/Box_str_/0/report/index.html">clone/Box&lt;str&gt;/0</a></td>
+                            <td><a href="../clone/CompactString__new/0/report/index.html">clone/CompactString::new/0</a></td>
+                            <td><a href="../clone/HipStr__from/0/report/index.html">clone/HipStr::from/0</a></td>
+                            <td><a href="../clone/ImString__from/0/report/index.html">clone/ImString::from/0</a></td>
+                            <td><a href="../clone/KString__from_ref/0/report/index.html">clone/KString::from_ref/0</a></td>
+                            <td><a href="../clone/KString__from_string/0/report/index.html">clone/KString::from_string/0</a></td>
+                            <td><a href="../clone/SmolStr__new/0/report/index.html">clone/SmolStr::new/0</a></td>
+                            <td><a href="../clone/String/0/report/index.html">clone/String/0</a></td>
+                            <td><a href="../clone/StringCow__Owned/0/report/index.html">clone/StringCow::Owned/0</a></td>
+                            <td><a href="../clone/flexstr__SharedStr__from_ref/0/report/index.html">clone/flexstr::SharedStr::from_ref/0</a></td>
+                            <td><a href="../clone/smartstring__String__new/0/report/index.html">clone/smartstring::String::new/0</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone/1/report/index.html">1</a></th>
+                            <td><a href="../clone/Arc_str_/1/report/index.html">clone/Arc&lt;str&gt;/1</a></td>
+                            <td><a href="../clone/ArcStr__from/1/report/index.html">clone/ArcStr::from/1</a></td>
+                            <td><a href="../clone/Box_str_/1/report/index.html">clone/Box&lt;str&gt;/1</a></td>
+                            <td><a href="../clone/CompactString__new/1/report/index.html">clone/CompactString::new/1</a></td>
+                            <td><a href="../clone/HipStr__from/1/report/index.html">clone/HipStr::from/1</a></td>
+                            <td><a href="../clone/ImString__from/1/report/index.html">clone/ImString::from/1</a></td>
+                            <td><a href="../clone/KString__from_ref/1/report/index.html">clone/KString::from_ref/1</a></td>
+                            <td><a href="../clone/KString__from_string/1/report/index.html">clone/KString::from_string/1</a></td>
+                            <td><a href="../clone/SmolStr__new/1/report/index.html">clone/SmolStr::new/1</a></td>
+                            <td><a href="../clone/String/1/report/index.html">clone/String/1</a></td>
+                            <td><a href="../clone/StringCow__Owned/1/report/index.html">clone/StringCow::Owned/1</a></td>
+                            <td><a href="../clone/flexstr__SharedStr__from_ref/1/report/index.html">clone/flexstr::SharedStr::from_ref/1</a></td>
+                            <td><a href="../clone/smartstring__String__new/1/report/index.html">clone/smartstring::String::new/1</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone/15/report/index.html">15</a></th>
+                            <td><a href="../clone/Arc_str_/15/report/index.html">clone/Arc&lt;str&gt;/15</a></td>
+                            <td><a href="../clone/ArcStr__from/15/report/index.html">clone/ArcStr::from/15</a></td>
+                            <td><a href="../clone/Box_str_/15/report/index.html">clone/Box&lt;str&gt;/15</a></td>
+                            <td><a href="../clone/CompactString__new/15/report/index.html">clone/CompactString::new/15</a></td>
+                            <td><a href="../clone/HipStr__from/15/report/index.html">clone/HipStr::from/15</a></td>
+                            <td><a href="../clone/ImString__from/15/report/index.html">clone/ImString::from/15</a></td>
+                            <td><a href="../clone/KString__from_ref/15/report/index.html">clone/KString::from_ref/15</a></td>
+                            <td><a href="../clone/KString__from_string/15/report/index.html">clone/KString::from_string/15</a></td>
+                            <td><a href="../clone/SmolStr__new/15/report/index.html">clone/SmolStr::new/15</a></td>
+                            <td><a href="../clone/String/15/report/index.html">clone/String/15</a></td>
+                            <td><a href="../clone/StringCow__Owned/15/report/index.html">clone/StringCow::Owned/15</a></td>
+                            <td><a href="../clone/flexstr__SharedStr__from_ref/15/report/index.html">clone/flexstr::SharedStr::from_ref/15</a></td>
+                            <td><a href="../clone/smartstring__String__new/15/report/index.html">clone/smartstring::String::new/15</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone/22/report/index.html">22</a></th>
+                            <td><a href="../clone/Arc_str_/22/report/index.html">clone/Arc&lt;str&gt;/22</a></td>
+                            <td><a href="../clone/ArcStr__from/22/report/index.html">clone/ArcStr::from/22</a></td>
+                            <td><a href="../clone/Box_str_/22/report/index.html">clone/Box&lt;str&gt;/22</a></td>
+                            <td><a href="../clone/CompactString__new/22/report/index.html">clone/CompactString::new/22</a></td>
+                            <td><a href="../clone/HipStr__from/22/report/index.html">clone/HipStr::from/22</a></td>
+                            <td><a href="../clone/ImString__from/22/report/index.html">clone/ImString::from/22</a></td>
+                            <td><a href="../clone/KString__from_ref/22/report/index.html">clone/KString::from_ref/22</a></td>
+                            <td><a href="../clone/KString__from_string/22/report/index.html">clone/KString::from_string/22</a></td>
+                            <td><a href="../clone/SmolStr__new/22/report/index.html">clone/SmolStr::new/22</a></td>
+                            <td><a href="../clone/String/22/report/index.html">clone/String/22</a></td>
+                            <td><a href="../clone/StringCow__Owned/22/report/index.html">clone/StringCow::Owned/22</a></td>
+                            <td><a href="../clone/flexstr__SharedStr__from_ref/22/report/index.html">clone/flexstr::SharedStr::from_ref/22</a></td>
+                            <td><a href="../clone/smartstring__String__new/22/report/index.html">clone/smartstring::String::new/22</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone/23/report/index.html">23</a></th>
+                            <td><a href="../clone/Arc_str_/23/report/index.html">clone/Arc&lt;str&gt;/23</a></td>
+                            <td><a href="../clone/ArcStr__from/23/report/index.html">clone/ArcStr::from/23</a></td>
+                            <td><a href="../clone/Box_str_/23/report/index.html">clone/Box&lt;str&gt;/23</a></td>
+                            <td><a href="../clone/CompactString__new/23/report/index.html">clone/CompactString::new/23</a></td>
+                            <td><a href="../clone/HipStr__from/23/report/index.html">clone/HipStr::from/23</a></td>
+                            <td><a href="../clone/ImString__from/23/report/index.html">clone/ImString::from/23</a></td>
+                            <td><a href="../clone/KString__from_ref/23/report/index.html">clone/KString::from_ref/23</a></td>
+                            <td><a href="../clone/KString__from_string/23/report/index.html">clone/KString::from_string/23</a></td>
+                            <td><a href="../clone/SmolStr__new/23/report/index.html">clone/SmolStr::new/23</a></td>
+                            <td><a href="../clone/String/23/report/index.html">clone/String/23</a></td>
+                            <td><a href="../clone/StringCow__Owned/23/report/index.html">clone/StringCow::Owned/23</a></td>
+                            <td><a href="../clone/flexstr__SharedStr__from_ref/23/report/index.html">clone/flexstr::SharedStr::from_ref/23</a></td>
+                            <td><a href="../clone/smartstring__String__new/23/report/index.html">clone/smartstring::String::new/23</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone/24/report/index.html">24</a></th>
+                            <td><a href="../clone/Arc_str_/24/report/index.html">clone/Arc&lt;str&gt;/24</a></td>
+                            <td><a href="../clone/ArcStr__from/24/report/index.html">clone/ArcStr::from/24</a></td>
+                            <td><a href="../clone/Box_str_/24/report/index.html">clone/Box&lt;str&gt;/24</a></td>
+                            <td><a href="../clone/CompactString__new/24/report/index.html">clone/CompactString::new/24</a></td>
+                            <td><a href="../clone/HipStr__from/24/report/index.html">clone/HipStr::from/24</a></td>
+                            <td><a href="../clone/ImString__from/24/report/index.html">clone/ImString::from/24</a></td>
+                            <td><a href="../clone/KString__from_ref/24/report/index.html">clone/KString::from_ref/24</a></td>
+                            <td><a href="../clone/KString__from_string/24/report/index.html">clone/KString::from_string/24</a></td>
+                            <td><a href="../clone/SmolStr__new/24/report/index.html">clone/SmolStr::new/24</a></td>
+                            <td><a href="../clone/String/24/report/index.html">clone/String/24</a></td>
+                            <td><a href="../clone/StringCow__Owned/24/report/index.html">clone/StringCow::Owned/24</a></td>
+                            <td><a href="../clone/flexstr__SharedStr__from_ref/24/report/index.html">clone/flexstr::SharedStr::from_ref/24</a></td>
+                            <td><a href="../clone/smartstring__String__new/24/report/index.html">clone/smartstring::String::new/24</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone/25/report/index.html">25</a></th>
+                            <td><a href="../clone/Arc_str_/25/report/index.html">clone/Arc&lt;str&gt;/25</a></td>
+                            <td><a href="../clone/ArcStr__from/25/report/index.html">clone/ArcStr::from/25</a></td>
+                            <td><a href="../clone/Box_str_/25/report/index.html">clone/Box&lt;str&gt;/25</a></td>
+                            <td><a href="../clone/CompactString__new/25/report/index.html">clone/CompactString::new/25</a></td>
+                            <td><a href="../clone/HipStr__from/25/report/index.html">clone/HipStr::from/25</a></td>
+                            <td><a href="../clone/ImString__from/25/report/index.html">clone/ImString::from/25</a></td>
+                            <td><a href="../clone/KString__from_ref/25/report/index.html">clone/KString::from_ref/25</a></td>
+                            <td><a href="../clone/KString__from_string/25/report/index.html">clone/KString::from_string/25</a></td>
+                            <td><a href="../clone/SmolStr__new/25/report/index.html">clone/SmolStr::new/25</a></td>
+                            <td><a href="../clone/String/25/report/index.html">clone/String/25</a></td>
+                            <td><a href="../clone/StringCow__Owned/25/report/index.html">clone/StringCow::Owned/25</a></td>
+                            <td><a href="../clone/flexstr__SharedStr__from_ref/25/report/index.html">clone/flexstr::SharedStr::from_ref/25</a></td>
+                            <td><a href="../clone/smartstring__String__new/25/report/index.html">clone/smartstring::String::new/25</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone/64/report/index.html">64</a></th>
+                            <td><a href="../clone/Arc_str_/64/report/index.html">clone/Arc&lt;str&gt;/64</a></td>
+                            <td><a href="../clone/ArcStr__from/64/report/index.html">clone/ArcStr::from/64</a></td>
+                            <td><a href="../clone/Box_str_/64/report/index.html">clone/Box&lt;str&gt;/64</a></td>
+                            <td><a href="../clone/CompactString__new/64/report/index.html">clone/CompactString::new/64</a></td>
+                            <td><a href="../clone/HipStr__from/64/report/index.html">clone/HipStr::from/64</a></td>
+                            <td><a href="../clone/ImString__from/64/report/index.html">clone/ImString::from/64</a></td>
+                            <td><a href="../clone/KString__from_ref/64/report/index.html">clone/KString::from_ref/64</a></td>
+                            <td><a href="../clone/KString__from_string/64/report/index.html">clone/KString::from_string/64</a></td>
+                            <td><a href="../clone/SmolStr__new/64/report/index.html">clone/SmolStr::new/64</a></td>
+                            <td><a href="../clone/String/64/report/index.html">clone/String/64</a></td>
+                            <td><a href="../clone/StringCow__Owned/64/report/index.html">clone/StringCow::Owned/64</a></td>
+                            <td><a href="../clone/flexstr__SharedStr__from_ref/64/report/index.html">clone/flexstr::SharedStr::from_ref/64</a></td>
+                            <td><a href="../clone/smartstring__String__new/64/report/index.html">clone/smartstring::String::new/64</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone/500/report/index.html">500</a></th>
+                            <td><a href="../clone/Arc_str_/500/report/index.html">clone/Arc&lt;str&gt;/500</a></td>
+                            <td><a href="../clone/ArcStr__from/500/report/index.html">clone/ArcStr::from/500</a></td>
+                            <td><a href="../clone/Box_str_/500/report/index.html">clone/Box&lt;str&gt;/500</a></td>
+                            <td><a href="../clone/CompactString__new/500/report/index.html">clone/CompactString::new/500</a></td>
+                            <td><a href="../clone/HipStr__from/500/report/index.html">clone/HipStr::from/500</a></td>
+                            <td><a href="../clone/ImString__from/500/report/index.html">clone/ImString::from/500</a></td>
+                            <td><a href="../clone/KString__from_ref/500/report/index.html">clone/KString::from_ref/500</a></td>
+                            <td><a href="../clone/KString__from_string/500/report/index.html">clone/KString::from_string/500</a></td>
+                            <td><a href="../clone/SmolStr__new/500/report/index.html">clone/SmolStr::new/500</a></td>
+                            <td><a href="../clone/String/500/report/index.html">clone/String/500</a></td>
+                            <td><a href="../clone/StringCow__Owned/500/report/index.html">clone/StringCow::Owned/500</a></td>
+                            <td><a href="../clone/flexstr__SharedStr__from_ref/500/report/index.html">clone/flexstr::SharedStr::from_ref/500</a></td>
+                            <td><a href="../clone/smartstring__String__new/500/report/index.html">clone/smartstring::String::new/500</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../clone_static/report/index.html">clone_static</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../clone_static/&amp;&#39;static str/report/index.html">&amp;&#39;static str</a></th>
+                            <th><a href="../clone_static/KString__from_static/report/index.html">KString::from_static</a></th>
+                            <th><a href="../clone_static/StringCow__Borrowed/report/index.html">StringCow::Borrowed</a></th>
+                            <th><a href="../clone_static/flexstr__SharedStr__from_static/report/index.html">flexstr::SharedStr::from_static</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone_static/0/report/index.html">0</a></th>
+                            <td><a href="../clone_static/&amp;&#39;static str/0/report/index.html">clone_static/&amp;&#39;static str/0</a></td>
+                            <td><a href="../clone_static/KString__from_static/0/report/index.html">clone_static/KString::from_static/0</a></td>
+                            <td><a href="../clone_static/StringCow__Borrowed/0/report/index.html">clone_static/StringCow::Borrowed/0</a></td>
+                            <td><a href="../clone_static/flexstr__SharedStr__from_static/0/report/index.html">clone_static/flexstr::SharedStr::from_static/0</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone_static/1/report/index.html">1</a></th>
+                            <td><a href="../clone_static/&amp;&#39;static str/1/report/index.html">clone_static/&amp;&#39;static str/1</a></td>
+                            <td><a href="../clone_static/KString__from_static/1/report/index.html">clone_static/KString::from_static/1</a></td>
+                            <td><a href="../clone_static/StringCow__Borrowed/1/report/index.html">clone_static/StringCow::Borrowed/1</a></td>
+                            <td><a href="../clone_static/flexstr__SharedStr__from_static/1/report/index.html">clone_static/flexstr::SharedStr::from_static/1</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone_static/15/report/index.html">15</a></th>
+                            <td><a href="../clone_static/&amp;&#39;static str/15/report/index.html">clone_static/&amp;&#39;static str/15</a></td>
+                            <td><a href="../clone_static/KString__from_static/15/report/index.html">clone_static/KString::from_static/15</a></td>
+                            <td><a href="../clone_static/StringCow__Borrowed/15/report/index.html">clone_static/StringCow::Borrowed/15</a></td>
+                            <td><a href="../clone_static/flexstr__SharedStr__from_static/15/report/index.html">clone_static/flexstr::SharedStr::from_static/15</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone_static/22/report/index.html">22</a></th>
+                            <td><a href="../clone_static/&amp;&#39;static str/22/report/index.html">clone_static/&amp;&#39;static str/22</a></td>
+                            <td><a href="../clone_static/KString__from_static/22/report/index.html">clone_static/KString::from_static/22</a></td>
+                            <td><a href="../clone_static/StringCow__Borrowed/22/report/index.html">clone_static/StringCow::Borrowed/22</a></td>
+                            <td><a href="../clone_static/flexstr__SharedStr__from_static/22/report/index.html">clone_static/flexstr::SharedStr::from_static/22</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone_static/23/report/index.html">23</a></th>
+                            <td><a href="../clone_static/&amp;&#39;static str/23/report/index.html">clone_static/&amp;&#39;static str/23</a></td>
+                            <td><a href="../clone_static/KString__from_static/23/report/index.html">clone_static/KString::from_static/23</a></td>
+                            <td><a href="../clone_static/StringCow__Borrowed/23/report/index.html">clone_static/StringCow::Borrowed/23</a></td>
+                            <td><a href="../clone_static/flexstr__SharedStr__from_static/23/report/index.html">clone_static/flexstr::SharedStr::from_static/23</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone_static/24/report/index.html">24</a></th>
+                            <td><a href="../clone_static/&amp;&#39;static str/24/report/index.html">clone_static/&amp;&#39;static str/24</a></td>
+                            <td><a href="../clone_static/KString__from_static/24/report/index.html">clone_static/KString::from_static/24</a></td>
+                            <td><a href="../clone_static/StringCow__Borrowed/24/report/index.html">clone_static/StringCow::Borrowed/24</a></td>
+                            <td><a href="../clone_static/flexstr__SharedStr__from_static/24/report/index.html">clone_static/flexstr::SharedStr::from_static/24</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone_static/25/report/index.html">25</a></th>
+                            <td><a href="../clone_static/&amp;&#39;static str/25/report/index.html">clone_static/&amp;&#39;static str/25</a></td>
+                            <td><a href="../clone_static/KString__from_static/25/report/index.html">clone_static/KString::from_static/25</a></td>
+                            <td><a href="../clone_static/StringCow__Borrowed/25/report/index.html">clone_static/StringCow::Borrowed/25</a></td>
+                            <td><a href="../clone_static/flexstr__SharedStr__from_static/25/report/index.html">clone_static/flexstr::SharedStr::from_static/25</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone_static/64/report/index.html">64</a></th>
+                            <td><a href="../clone_static/&amp;&#39;static str/64/report/index.html">clone_static/&amp;&#39;static str/64</a></td>
+                            <td><a href="../clone_static/KString__from_static/64/report/index.html">clone_static/KString::from_static/64</a></td>
+                            <td><a href="../clone_static/StringCow__Borrowed/64/report/index.html">clone_static/StringCow::Borrowed/64</a></td>
+                            <td><a href="../clone_static/flexstr__SharedStr__from_static/64/report/index.html">clone_static/flexstr::SharedStr::from_static/64</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../clone_static/500/report/index.html">500</a></th>
+                            <td><a href="../clone_static/&amp;&#39;static str/500/report/index.html">clone_static/&amp;&#39;static str/500</a></td>
+                            <td><a href="../clone_static/KString__from_static/500/report/index.html">clone_static/KString::from_static/500</a></td>
+                            <td><a href="../clone_static/StringCow__Borrowed/500/report/index.html">clone_static/StringCow::Borrowed/500</a></td>
+                            <td><a href="../clone_static/flexstr__SharedStr__from_static/500/report/index.html">clone_static/flexstr::SharedStr::from_static/500</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../new/report/index.html">new</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../new/Arc_str_/report/index.html">Arc&lt;str&gt;</a></th>
+                            <th><a href="../new/ArcStr__from/report/index.html">ArcStr::from</a></th>
+                            <th><a href="../new/Box_str_/report/index.html">Box&lt;str&gt;</a></th>
+                            <th><a href="../new/CompactString__new/report/index.html">CompactString::new</a></th>
+                            <th><a href="../new/HipStr__from/report/index.html">HipStr::from</a></th>
+                            <th><a href="../new/ImString__from/report/index.html">ImString::from</a></th>
+                            <th><a href="../new/KString__from_ref/report/index.html">KString::from_ref</a></th>
+                            <th><a href="../new/KString__from_string/report/index.html">KString::from_string</a></th>
+                            <th><a href="../new/SmolStr__new/report/index.html">SmolStr::new</a></th>
+                            <th><a href="../new/String/report/index.html">String</a></th>
+                            <th><a href="../new/StringCow__Owned/report/index.html">StringCow::Owned</a></th>
+                            <th><a href="../new/flexstr__SharedStr__from_ref/report/index.html">flexstr::SharedStr::from_ref</a></th>
+                            <th><a href="../new/smartstring__String__new/report/index.html">smartstring::String::new</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../new/0/report/index.html">0</a></th>
+                            <td><a href="../new/Arc_str_/0/report/index.html">new/Arc&lt;str&gt;/0</a></td>
+                            <td><a href="../new/ArcStr__from/0/report/index.html">new/ArcStr::from/0</a></td>
+                            <td><a href="../new/Box_str_/0/report/index.html">new/Box&lt;str&gt;/0</a></td>
+                            <td><a href="../new/CompactString__new/0/report/index.html">new/CompactString::new/0</a></td>
+                            <td><a href="../new/HipStr__from/0/report/index.html">new/HipStr::from/0</a></td>
+                            <td><a href="../new/ImString__from/0/report/index.html">new/ImString::from/0</a></td>
+                            <td><a href="../new/KString__from_ref/0/report/index.html">new/KString::from_ref/0</a></td>
+                            <td><a href="../new/KString__from_string/0/report/index.html">new/KString::from_string/0</a></td>
+                            <td><a href="../new/SmolStr__new/0/report/index.html">new/SmolStr::new/0</a></td>
+                            <td><a href="../new/String/0/report/index.html">new/String/0</a></td>
+                            <td><a href="../new/StringCow__Owned/0/report/index.html">new/StringCow::Owned/0</a></td>
+                            <td><a href="../new/flexstr__SharedStr__from_ref/0/report/index.html">new/flexstr::SharedStr::from_ref/0</a></td>
+                            <td><a href="../new/smartstring__String__new/0/report/index.html">new/smartstring::String::new/0</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new/1/report/index.html">1</a></th>
+                            <td><a href="../new/Arc_str_/1/report/index.html">new/Arc&lt;str&gt;/1</a></td>
+                            <td><a href="../new/ArcStr__from/1/report/index.html">new/ArcStr::from/1</a></td>
+                            <td><a href="../new/Box_str_/1/report/index.html">new/Box&lt;str&gt;/1</a></td>
+                            <td><a href="../new/CompactString__new/1/report/index.html">new/CompactString::new/1</a></td>
+                            <td><a href="../new/HipStr__from/1/report/index.html">new/HipStr::from/1</a></td>
+                            <td><a href="../new/ImString__from/1/report/index.html">new/ImString::from/1</a></td>
+                            <td><a href="../new/KString__from_ref/1/report/index.html">new/KString::from_ref/1</a></td>
+                            <td><a href="../new/KString__from_string/1/report/index.html">new/KString::from_string/1</a></td>
+                            <td><a href="../new/SmolStr__new/1/report/index.html">new/SmolStr::new/1</a></td>
+                            <td><a href="../new/String/1/report/index.html">new/String/1</a></td>
+                            <td><a href="../new/StringCow__Owned/1/report/index.html">new/StringCow::Owned/1</a></td>
+                            <td><a href="../new/flexstr__SharedStr__from_ref/1/report/index.html">new/flexstr::SharedStr::from_ref/1</a></td>
+                            <td><a href="../new/smartstring__String__new/1/report/index.html">new/smartstring::String::new/1</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new/15/report/index.html">15</a></th>
+                            <td><a href="../new/Arc_str_/15/report/index.html">new/Arc&lt;str&gt;/15</a></td>
+                            <td><a href="../new/ArcStr__from/15/report/index.html">new/ArcStr::from/15</a></td>
+                            <td><a href="../new/Box_str_/15/report/index.html">new/Box&lt;str&gt;/15</a></td>
+                            <td><a href="../new/CompactString__new/15/report/index.html">new/CompactString::new/15</a></td>
+                            <td><a href="../new/HipStr__from/15/report/index.html">new/HipStr::from/15</a></td>
+                            <td><a href="../new/ImString__from/15/report/index.html">new/ImString::from/15</a></td>
+                            <td><a href="../new/KString__from_ref/15/report/index.html">new/KString::from_ref/15</a></td>
+                            <td><a href="../new/KString__from_string/15/report/index.html">new/KString::from_string/15</a></td>
+                            <td><a href="../new/SmolStr__new/15/report/index.html">new/SmolStr::new/15</a></td>
+                            <td><a href="../new/String/15/report/index.html">new/String/15</a></td>
+                            <td><a href="../new/StringCow__Owned/15/report/index.html">new/StringCow::Owned/15</a></td>
+                            <td><a href="../new/flexstr__SharedStr__from_ref/15/report/index.html">new/flexstr::SharedStr::from_ref/15</a></td>
+                            <td><a href="../new/smartstring__String__new/15/report/index.html">new/smartstring::String::new/15</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new/22/report/index.html">22</a></th>
+                            <td><a href="../new/Arc_str_/22/report/index.html">new/Arc&lt;str&gt;/22</a></td>
+                            <td><a href="../new/ArcStr__from/22/report/index.html">new/ArcStr::from/22</a></td>
+                            <td><a href="../new/Box_str_/22/report/index.html">new/Box&lt;str&gt;/22</a></td>
+                            <td><a href="../new/CompactString__new/22/report/index.html">new/CompactString::new/22</a></td>
+                            <td><a href="../new/HipStr__from/22/report/index.html">new/HipStr::from/22</a></td>
+                            <td><a href="../new/ImString__from/22/report/index.html">new/ImString::from/22</a></td>
+                            <td><a href="../new/KString__from_ref/22/report/index.html">new/KString::from_ref/22</a></td>
+                            <td><a href="../new/KString__from_string/22/report/index.html">new/KString::from_string/22</a></td>
+                            <td><a href="../new/SmolStr__new/22/report/index.html">new/SmolStr::new/22</a></td>
+                            <td><a href="../new/String/22/report/index.html">new/String/22</a></td>
+                            <td><a href="../new/StringCow__Owned/22/report/index.html">new/StringCow::Owned/22</a></td>
+                            <td><a href="../new/flexstr__SharedStr__from_ref/22/report/index.html">new/flexstr::SharedStr::from_ref/22</a></td>
+                            <td><a href="../new/smartstring__String__new/22/report/index.html">new/smartstring::String::new/22</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new/23/report/index.html">23</a></th>
+                            <td><a href="../new/Arc_str_/23/report/index.html">new/Arc&lt;str&gt;/23</a></td>
+                            <td><a href="../new/ArcStr__from/23/report/index.html">new/ArcStr::from/23</a></td>
+                            <td><a href="../new/Box_str_/23/report/index.html">new/Box&lt;str&gt;/23</a></td>
+                            <td><a href="../new/CompactString__new/23/report/index.html">new/CompactString::new/23</a></td>
+                            <td><a href="../new/HipStr__from/23/report/index.html">new/HipStr::from/23</a></td>
+                            <td><a href="../new/ImString__from/23/report/index.html">new/ImString::from/23</a></td>
+                            <td><a href="../new/KString__from_ref/23/report/index.html">new/KString::from_ref/23</a></td>
+                            <td><a href="../new/KString__from_string/23/report/index.html">new/KString::from_string/23</a></td>
+                            <td><a href="../new/SmolStr__new/23/report/index.html">new/SmolStr::new/23</a></td>
+                            <td><a href="../new/String/23/report/index.html">new/String/23</a></td>
+                            <td><a href="../new/StringCow__Owned/23/report/index.html">new/StringCow::Owned/23</a></td>
+                            <td><a href="../new/flexstr__SharedStr__from_ref/23/report/index.html">new/flexstr::SharedStr::from_ref/23</a></td>
+                            <td><a href="../new/smartstring__String__new/23/report/index.html">new/smartstring::String::new/23</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new/24/report/index.html">24</a></th>
+                            <td><a href="../new/Arc_str_/24/report/index.html">new/Arc&lt;str&gt;/24</a></td>
+                            <td><a href="../new/ArcStr__from/24/report/index.html">new/ArcStr::from/24</a></td>
+                            <td><a href="../new/Box_str_/24/report/index.html">new/Box&lt;str&gt;/24</a></td>
+                            <td><a href="../new/CompactString__new/24/report/index.html">new/CompactString::new/24</a></td>
+                            <td><a href="../new/HipStr__from/24/report/index.html">new/HipStr::from/24</a></td>
+                            <td><a href="../new/ImString__from/24/report/index.html">new/ImString::from/24</a></td>
+                            <td><a href="../new/KString__from_ref/24/report/index.html">new/KString::from_ref/24</a></td>
+                            <td><a href="../new/KString__from_string/24/report/index.html">new/KString::from_string/24</a></td>
+                            <td><a href="../new/SmolStr__new/24/report/index.html">new/SmolStr::new/24</a></td>
+                            <td><a href="../new/String/24/report/index.html">new/String/24</a></td>
+                            <td><a href="../new/StringCow__Owned/24/report/index.html">new/StringCow::Owned/24</a></td>
+                            <td><a href="../new/flexstr__SharedStr__from_ref/24/report/index.html">new/flexstr::SharedStr::from_ref/24</a></td>
+                            <td><a href="../new/smartstring__String__new/24/report/index.html">new/smartstring::String::new/24</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new/25/report/index.html">25</a></th>
+                            <td><a href="../new/Arc_str_/25/report/index.html">new/Arc&lt;str&gt;/25</a></td>
+                            <td><a href="../new/ArcStr__from/25/report/index.html">new/ArcStr::from/25</a></td>
+                            <td><a href="../new/Box_str_/25/report/index.html">new/Box&lt;str&gt;/25</a></td>
+                            <td><a href="../new/CompactString__new/25/report/index.html">new/CompactString::new/25</a></td>
+                            <td><a href="../new/HipStr__from/25/report/index.html">new/HipStr::from/25</a></td>
+                            <td><a href="../new/ImString__from/25/report/index.html">new/ImString::from/25</a></td>
+                            <td><a href="../new/KString__from_ref/25/report/index.html">new/KString::from_ref/25</a></td>
+                            <td><a href="../new/KString__from_string/25/report/index.html">new/KString::from_string/25</a></td>
+                            <td><a href="../new/SmolStr__new/25/report/index.html">new/SmolStr::new/25</a></td>
+                            <td><a href="../new/String/25/report/index.html">new/String/25</a></td>
+                            <td><a href="../new/StringCow__Owned/25/report/index.html">new/StringCow::Owned/25</a></td>
+                            <td><a href="../new/flexstr__SharedStr__from_ref/25/report/index.html">new/flexstr::SharedStr::from_ref/25</a></td>
+                            <td><a href="../new/smartstring__String__new/25/report/index.html">new/smartstring::String::new/25</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new/64/report/index.html">64</a></th>
+                            <td><a href="../new/Arc_str_/64/report/index.html">new/Arc&lt;str&gt;/64</a></td>
+                            <td><a href="../new/ArcStr__from/64/report/index.html">new/ArcStr::from/64</a></td>
+                            <td><a href="../new/Box_str_/64/report/index.html">new/Box&lt;str&gt;/64</a></td>
+                            <td><a href="../new/CompactString__new/64/report/index.html">new/CompactString::new/64</a></td>
+                            <td><a href="../new/HipStr__from/64/report/index.html">new/HipStr::from/64</a></td>
+                            <td><a href="../new/ImString__from/64/report/index.html">new/ImString::from/64</a></td>
+                            <td><a href="../new/KString__from_ref/64/report/index.html">new/KString::from_ref/64</a></td>
+                            <td><a href="../new/KString__from_string/64/report/index.html">new/KString::from_string/64</a></td>
+                            <td><a href="../new/SmolStr__new/64/report/index.html">new/SmolStr::new/64</a></td>
+                            <td><a href="../new/String/64/report/index.html">new/String/64</a></td>
+                            <td><a href="../new/StringCow__Owned/64/report/index.html">new/StringCow::Owned/64</a></td>
+                            <td><a href="../new/flexstr__SharedStr__from_ref/64/report/index.html">new/flexstr::SharedStr::from_ref/64</a></td>
+                            <td><a href="../new/smartstring__String__new/64/report/index.html">new/smartstring::String::new/64</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new/500/report/index.html">500</a></th>
+                            <td><a href="../new/Arc_str_/500/report/index.html">new/Arc&lt;str&gt;/500</a></td>
+                            <td><a href="../new/ArcStr__from/500/report/index.html">new/ArcStr::from/500</a></td>
+                            <td><a href="../new/Box_str_/500/report/index.html">new/Box&lt;str&gt;/500</a></td>
+                            <td><a href="../new/CompactString__new/500/report/index.html">new/CompactString::new/500</a></td>
+                            <td><a href="../new/HipStr__from/500/report/index.html">new/HipStr::from/500</a></td>
+                            <td><a href="../new/ImString__from/500/report/index.html">new/ImString::from/500</a></td>
+                            <td><a href="../new/KString__from_ref/500/report/index.html">new/KString::from_ref/500</a></td>
+                            <td><a href="../new/KString__from_string/500/report/index.html">new/KString::from_string/500</a></td>
+                            <td><a href="../new/SmolStr__new/500/report/index.html">new/SmolStr::new/500</a></td>
+                            <td><a href="../new/String/500/report/index.html">new/String/500</a></td>
+                            <td><a href="../new/StringCow__Owned/500/report/index.html">new/StringCow::Owned/500</a></td>
+                            <td><a href="../new/flexstr__SharedStr__from_ref/500/report/index.html">new/flexstr::SharedStr::from_ref/500</a></td>
+                            <td><a href="../new/smartstring__String__new/500/report/index.html">new/smartstring::String::new/500</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../new_static/report/index.html">new_static</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../new_static/KString__from_static/report/index.html">KString::from_static</a></th>
+                            <th><a href="../new_static/StringCow__Borrowed/report/index.html">StringCow::Borrowed</a></th>
+                            <th><a href="../new_static/flexstr__SharedStr__from_static/report/index.html">flexstr::SharedStr::from_static</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../new_static/0/report/index.html">0</a></th>
+                            <td><a href="../new_static/KString__from_static/0/report/index.html">new_static/KString::from_static/0</a></td>
+                            <td><a href="../new_static/StringCow__Borrowed/0/report/index.html">new_static/StringCow::Borrowed/0</a></td>
+                            <td><a href="../new_static/flexstr__SharedStr__from_static/0/report/index.html">new_static/flexstr::SharedStr::from_static/0</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new_static/1/report/index.html">1</a></th>
+                            <td><a href="../new_static/KString__from_static/1/report/index.html">new_static/KString::from_static/1</a></td>
+                            <td><a href="../new_static/StringCow__Borrowed/1/report/index.html">new_static/StringCow::Borrowed/1</a></td>
+                            <td><a href="../new_static/flexstr__SharedStr__from_static/1/report/index.html">new_static/flexstr::SharedStr::from_static/1</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new_static/15/report/index.html">15</a></th>
+                            <td><a href="../new_static/KString__from_static/15/report/index.html">new_static/KString::from_static/15</a></td>
+                            <td><a href="../new_static/StringCow__Borrowed/15/report/index.html">new_static/StringCow::Borrowed/15</a></td>
+                            <td><a href="../new_static/flexstr__SharedStr__from_static/15/report/index.html">new_static/flexstr::SharedStr::from_static/15</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new_static/22/report/index.html">22</a></th>
+                            <td><a href="../new_static/KString__from_static/22/report/index.html">new_static/KString::from_static/22</a></td>
+                            <td><a href="../new_static/StringCow__Borrowed/22/report/index.html">new_static/StringCow::Borrowed/22</a></td>
+                            <td><a href="../new_static/flexstr__SharedStr__from_static/22/report/index.html">new_static/flexstr::SharedStr::from_static/22</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new_static/23/report/index.html">23</a></th>
+                            <td><a href="../new_static/KString__from_static/23/report/index.html">new_static/KString::from_static/23</a></td>
+                            <td><a href="../new_static/StringCow__Borrowed/23/report/index.html">new_static/StringCow::Borrowed/23</a></td>
+                            <td><a href="../new_static/flexstr__SharedStr__from_static/23/report/index.html">new_static/flexstr::SharedStr::from_static/23</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new_static/24/report/index.html">24</a></th>
+                            <td><a href="../new_static/KString__from_static/24/report/index.html">new_static/KString::from_static/24</a></td>
+                            <td><a href="../new_static/StringCow__Borrowed/24/report/index.html">new_static/StringCow::Borrowed/24</a></td>
+                            <td><a href="../new_static/flexstr__SharedStr__from_static/24/report/index.html">new_static/flexstr::SharedStr::from_static/24</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new_static/25/report/index.html">25</a></th>
+                            <td><a href="../new_static/KString__from_static/25/report/index.html">new_static/KString::from_static/25</a></td>
+                            <td><a href="../new_static/StringCow__Borrowed/25/report/index.html">new_static/StringCow::Borrowed/25</a></td>
+                            <td><a href="../new_static/flexstr__SharedStr__from_static/25/report/index.html">new_static/flexstr::SharedStr::from_static/25</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new_static/64/report/index.html">64</a></th>
+                            <td><a href="../new_static/KString__from_static/64/report/index.html">new_static/KString::from_static/64</a></td>
+                            <td><a href="../new_static/StringCow__Borrowed/64/report/index.html">new_static/StringCow::Borrowed/64</a></td>
+                            <td><a href="../new_static/flexstr__SharedStr__from_static/64/report/index.html">new_static/flexstr::SharedStr::from_static/64</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../new_static/500/report/index.html">500</a></th>
+                            <td><a href="../new_static/KString__from_static/500/report/index.html">new_static/KString::from_static/500</a></td>
+                            <td><a href="../new_static/StringCow__Borrowed/500/report/index.html">new_static/StringCow::Borrowed/500</a></td>
+                            <td><a href="../new_static/flexstr__SharedStr__from_static/500/report/index.html">new_static/flexstr::SharedStr::from_static/500</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>This report was generated by
+            <a href="https://github.com/bheisler/criterion.rs">Criterion.rs</a>, a statistics-driven benchmarking
+            library in Rust.</p>
+    </div>
+</body>
+</html>

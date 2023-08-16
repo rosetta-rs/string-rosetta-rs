@@ -1,0 +1,2764 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>access Summary - Criterion.rs</title>
+    <style type="text/css">
+        body {
+            font: 14px Helvetica Neue;
+            text-rendering: optimizelegibility;
+        }
+
+        .body {
+            width: 960px;
+            margin: auto;
+        }
+
+        a:link {
+            color: #1F78B4;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 300;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        #footer {
+            height: 40px;
+            background: #888;
+            color: white;
+            font-size: larger;
+            font-weight: 300;
+        }
+
+        #footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        #footer p {
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <h2>access</h2>
+        <h3>Violin Plot</h3>
+        <a href="violin.svg">
+            <img src="violin.svg" alt="Violin Plot" />
+        </a>
+        <p>This chart shows the relationship between function/parameter and iteration time. The thickness of the shaded
+            region indicates the probability that a measurement of the given function/parameter would take a particular
+            length of time.</p>
+        <h3>Line Chart</h3>
+        <img src="lines.svg" alt="Line Chart" />
+        <p>This chart shows the mean measured time for each function as the input (or the size of the input) increases.</p>
+        <section class="plots">
+            <a href="../../access/Arc_str_/0/report/index.html">
+                <h4>access/Arc&lt;str&gt;/0</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Arc_str_/0/report/pdf.svg">
+                                <img src="../../access/Arc_str_/0/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Arc_str_/0/report/regression.svg">
+                                <img src="../../access/Arc_str_/0/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Arc_str_/1/report/index.html">
+                <h4>access/Arc&lt;str&gt;/1</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Arc_str_/1/report/pdf.svg">
+                                <img src="../../access/Arc_str_/1/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Arc_str_/1/report/regression.svg">
+                                <img src="../../access/Arc_str_/1/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Arc_str_/15/report/index.html">
+                <h4>access/Arc&lt;str&gt;/15</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Arc_str_/15/report/pdf.svg">
+                                <img src="../../access/Arc_str_/15/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Arc_str_/15/report/regression.svg">
+                                <img src="../../access/Arc_str_/15/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Arc_str_/22/report/index.html">
+                <h4>access/Arc&lt;str&gt;/22</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Arc_str_/22/report/pdf.svg">
+                                <img src="../../access/Arc_str_/22/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Arc_str_/22/report/regression.svg">
+                                <img src="../../access/Arc_str_/22/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Arc_str_/23/report/index.html">
+                <h4>access/Arc&lt;str&gt;/23</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Arc_str_/23/report/pdf.svg">
+                                <img src="../../access/Arc_str_/23/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Arc_str_/23/report/regression.svg">
+                                <img src="../../access/Arc_str_/23/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Arc_str_/24/report/index.html">
+                <h4>access/Arc&lt;str&gt;/24</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Arc_str_/24/report/pdf.svg">
+                                <img src="../../access/Arc_str_/24/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Arc_str_/24/report/regression.svg">
+                                <img src="../../access/Arc_str_/24/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Arc_str_/25/report/index.html">
+                <h4>access/Arc&lt;str&gt;/25</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Arc_str_/25/report/pdf.svg">
+                                <img src="../../access/Arc_str_/25/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Arc_str_/25/report/regression.svg">
+                                <img src="../../access/Arc_str_/25/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Arc_str_/64/report/index.html">
+                <h4>access/Arc&lt;str&gt;/64</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Arc_str_/64/report/pdf.svg">
+                                <img src="../../access/Arc_str_/64/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Arc_str_/64/report/regression.svg">
+                                <img src="../../access/Arc_str_/64/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Arc_str_/500/report/index.html">
+                <h4>access/Arc&lt;str&gt;/500</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Arc_str_/500/report/pdf.svg">
+                                <img src="../../access/Arc_str_/500/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Arc_str_/500/report/regression.svg">
+                                <img src="../../access/Arc_str_/500/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ArcStr__from/0/report/index.html">
+                <h4>access/ArcStr::from/0</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ArcStr__from/0/report/pdf.svg">
+                                <img src="../../access/ArcStr__from/0/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ArcStr__from/0/report/regression.svg">
+                                <img src="../../access/ArcStr__from/0/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ArcStr__from/1/report/index.html">
+                <h4>access/ArcStr::from/1</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ArcStr__from/1/report/pdf.svg">
+                                <img src="../../access/ArcStr__from/1/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ArcStr__from/1/report/regression.svg">
+                                <img src="../../access/ArcStr__from/1/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ArcStr__from/15/report/index.html">
+                <h4>access/ArcStr::from/15</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ArcStr__from/15/report/pdf.svg">
+                                <img src="../../access/ArcStr__from/15/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ArcStr__from/15/report/regression.svg">
+                                <img src="../../access/ArcStr__from/15/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ArcStr__from/22/report/index.html">
+                <h4>access/ArcStr::from/22</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ArcStr__from/22/report/pdf.svg">
+                                <img src="../../access/ArcStr__from/22/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ArcStr__from/22/report/regression.svg">
+                                <img src="../../access/ArcStr__from/22/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ArcStr__from/23/report/index.html">
+                <h4>access/ArcStr::from/23</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ArcStr__from/23/report/pdf.svg">
+                                <img src="../../access/ArcStr__from/23/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ArcStr__from/23/report/regression.svg">
+                                <img src="../../access/ArcStr__from/23/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ArcStr__from/24/report/index.html">
+                <h4>access/ArcStr::from/24</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ArcStr__from/24/report/pdf.svg">
+                                <img src="../../access/ArcStr__from/24/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ArcStr__from/24/report/regression.svg">
+                                <img src="../../access/ArcStr__from/24/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ArcStr__from/25/report/index.html">
+                <h4>access/ArcStr::from/25</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ArcStr__from/25/report/pdf.svg">
+                                <img src="../../access/ArcStr__from/25/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ArcStr__from/25/report/regression.svg">
+                                <img src="../../access/ArcStr__from/25/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ArcStr__from/64/report/index.html">
+                <h4>access/ArcStr::from/64</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ArcStr__from/64/report/pdf.svg">
+                                <img src="../../access/ArcStr__from/64/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ArcStr__from/64/report/regression.svg">
+                                <img src="../../access/ArcStr__from/64/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ArcStr__from/500/report/index.html">
+                <h4>access/ArcStr::from/500</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ArcStr__from/500/report/pdf.svg">
+                                <img src="../../access/ArcStr__from/500/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ArcStr__from/500/report/regression.svg">
+                                <img src="../../access/ArcStr__from/500/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Box_str_/0/report/index.html">
+                <h4>access/Box&lt;str&gt;/0</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Box_str_/0/report/pdf.svg">
+                                <img src="../../access/Box_str_/0/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Box_str_/0/report/regression.svg">
+                                <img src="../../access/Box_str_/0/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Box_str_/1/report/index.html">
+                <h4>access/Box&lt;str&gt;/1</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Box_str_/1/report/pdf.svg">
+                                <img src="../../access/Box_str_/1/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Box_str_/1/report/regression.svg">
+                                <img src="../../access/Box_str_/1/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Box_str_/15/report/index.html">
+                <h4>access/Box&lt;str&gt;/15</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Box_str_/15/report/pdf.svg">
+                                <img src="../../access/Box_str_/15/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Box_str_/15/report/regression.svg">
+                                <img src="../../access/Box_str_/15/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Box_str_/22/report/index.html">
+                <h4>access/Box&lt;str&gt;/22</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Box_str_/22/report/pdf.svg">
+                                <img src="../../access/Box_str_/22/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Box_str_/22/report/regression.svg">
+                                <img src="../../access/Box_str_/22/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Box_str_/23/report/index.html">
+                <h4>access/Box&lt;str&gt;/23</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Box_str_/23/report/pdf.svg">
+                                <img src="../../access/Box_str_/23/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Box_str_/23/report/regression.svg">
+                                <img src="../../access/Box_str_/23/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Box_str_/24/report/index.html">
+                <h4>access/Box&lt;str&gt;/24</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Box_str_/24/report/pdf.svg">
+                                <img src="../../access/Box_str_/24/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Box_str_/24/report/regression.svg">
+                                <img src="../../access/Box_str_/24/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Box_str_/25/report/index.html">
+                <h4>access/Box&lt;str&gt;/25</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Box_str_/25/report/pdf.svg">
+                                <img src="../../access/Box_str_/25/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Box_str_/25/report/regression.svg">
+                                <img src="../../access/Box_str_/25/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Box_str_/64/report/index.html">
+                <h4>access/Box&lt;str&gt;/64</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Box_str_/64/report/pdf.svg">
+                                <img src="../../access/Box_str_/64/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Box_str_/64/report/regression.svg">
+                                <img src="../../access/Box_str_/64/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/Box_str_/500/report/index.html">
+                <h4>access/Box&lt;str&gt;/500</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/Box_str_/500/report/pdf.svg">
+                                <img src="../../access/Box_str_/500/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/Box_str_/500/report/regression.svg">
+                                <img src="../../access/Box_str_/500/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/CompactString__new/0/report/index.html">
+                <h4>access/CompactString::new/0</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/CompactString__new/0/report/pdf.svg">
+                                <img src="../../access/CompactString__new/0/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/CompactString__new/0/report/regression.svg">
+                                <img src="../../access/CompactString__new/0/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/CompactString__new/1/report/index.html">
+                <h4>access/CompactString::new/1</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/CompactString__new/1/report/pdf.svg">
+                                <img src="../../access/CompactString__new/1/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/CompactString__new/1/report/regression.svg">
+                                <img src="../../access/CompactString__new/1/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/CompactString__new/15/report/index.html">
+                <h4>access/CompactString::new/15</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/CompactString__new/15/report/pdf.svg">
+                                <img src="../../access/CompactString__new/15/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/CompactString__new/15/report/regression.svg">
+                                <img src="../../access/CompactString__new/15/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/CompactString__new/22/report/index.html">
+                <h4>access/CompactString::new/22</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/CompactString__new/22/report/pdf.svg">
+                                <img src="../../access/CompactString__new/22/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/CompactString__new/22/report/regression.svg">
+                                <img src="../../access/CompactString__new/22/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/CompactString__new/23/report/index.html">
+                <h4>access/CompactString::new/23</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/CompactString__new/23/report/pdf.svg">
+                                <img src="../../access/CompactString__new/23/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/CompactString__new/23/report/regression.svg">
+                                <img src="../../access/CompactString__new/23/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/CompactString__new/24/report/index.html">
+                <h4>access/CompactString::new/24</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/CompactString__new/24/report/pdf.svg">
+                                <img src="../../access/CompactString__new/24/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/CompactString__new/24/report/regression.svg">
+                                <img src="../../access/CompactString__new/24/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/CompactString__new/25/report/index.html">
+                <h4>access/CompactString::new/25</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/CompactString__new/25/report/pdf.svg">
+                                <img src="../../access/CompactString__new/25/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/CompactString__new/25/report/regression.svg">
+                                <img src="../../access/CompactString__new/25/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/CompactString__new/64/report/index.html">
+                <h4>access/CompactString::new/64</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/CompactString__new/64/report/pdf.svg">
+                                <img src="../../access/CompactString__new/64/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/CompactString__new/64/report/regression.svg">
+                                <img src="../../access/CompactString__new/64/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/CompactString__new/500/report/index.html">
+                <h4>access/CompactString::new/500</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/CompactString__new/500/report/pdf.svg">
+                                <img src="../../access/CompactString__new/500/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/CompactString__new/500/report/regression.svg">
+                                <img src="../../access/CompactString__new/500/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/HipStr__from/0/report/index.html">
+                <h4>access/HipStr::from/0</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/HipStr__from/0/report/pdf.svg">
+                                <img src="../../access/HipStr__from/0/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/HipStr__from/0/report/regression.svg">
+                                <img src="../../access/HipStr__from/0/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/HipStr__from/1/report/index.html">
+                <h4>access/HipStr::from/1</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/HipStr__from/1/report/pdf.svg">
+                                <img src="../../access/HipStr__from/1/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/HipStr__from/1/report/regression.svg">
+                                <img src="../../access/HipStr__from/1/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/HipStr__from/15/report/index.html">
+                <h4>access/HipStr::from/15</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/HipStr__from/15/report/pdf.svg">
+                                <img src="../../access/HipStr__from/15/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/HipStr__from/15/report/regression.svg">
+                                <img src="../../access/HipStr__from/15/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/HipStr__from/22/report/index.html">
+                <h4>access/HipStr::from/22</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/HipStr__from/22/report/pdf.svg">
+                                <img src="../../access/HipStr__from/22/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/HipStr__from/22/report/regression.svg">
+                                <img src="../../access/HipStr__from/22/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/HipStr__from/23/report/index.html">
+                <h4>access/HipStr::from/23</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/HipStr__from/23/report/pdf.svg">
+                                <img src="../../access/HipStr__from/23/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/HipStr__from/23/report/regression.svg">
+                                <img src="../../access/HipStr__from/23/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/HipStr__from/24/report/index.html">
+                <h4>access/HipStr::from/24</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/HipStr__from/24/report/pdf.svg">
+                                <img src="../../access/HipStr__from/24/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/HipStr__from/24/report/regression.svg">
+                                <img src="../../access/HipStr__from/24/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/HipStr__from/25/report/index.html">
+                <h4>access/HipStr::from/25</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/HipStr__from/25/report/pdf.svg">
+                                <img src="../../access/HipStr__from/25/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/HipStr__from/25/report/regression.svg">
+                                <img src="../../access/HipStr__from/25/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/HipStr__from/64/report/index.html">
+                <h4>access/HipStr::from/64</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/HipStr__from/64/report/pdf.svg">
+                                <img src="../../access/HipStr__from/64/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/HipStr__from/64/report/regression.svg">
+                                <img src="../../access/HipStr__from/64/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/HipStr__from/500/report/index.html">
+                <h4>access/HipStr::from/500</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/HipStr__from/500/report/pdf.svg">
+                                <img src="../../access/HipStr__from/500/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/HipStr__from/500/report/regression.svg">
+                                <img src="../../access/HipStr__from/500/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ImString__from/0/report/index.html">
+                <h4>access/ImString::from/0</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ImString__from/0/report/pdf.svg">
+                                <img src="../../access/ImString__from/0/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ImString__from/0/report/regression.svg">
+                                <img src="../../access/ImString__from/0/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ImString__from/1/report/index.html">
+                <h4>access/ImString::from/1</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ImString__from/1/report/pdf.svg">
+                                <img src="../../access/ImString__from/1/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ImString__from/1/report/regression.svg">
+                                <img src="../../access/ImString__from/1/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ImString__from/15/report/index.html">
+                <h4>access/ImString::from/15</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ImString__from/15/report/pdf.svg">
+                                <img src="../../access/ImString__from/15/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ImString__from/15/report/regression.svg">
+                                <img src="../../access/ImString__from/15/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ImString__from/22/report/index.html">
+                <h4>access/ImString::from/22</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ImString__from/22/report/pdf.svg">
+                                <img src="../../access/ImString__from/22/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ImString__from/22/report/regression.svg">
+                                <img src="../../access/ImString__from/22/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ImString__from/23/report/index.html">
+                <h4>access/ImString::from/23</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ImString__from/23/report/pdf.svg">
+                                <img src="../../access/ImString__from/23/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ImString__from/23/report/regression.svg">
+                                <img src="../../access/ImString__from/23/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ImString__from/24/report/index.html">
+                <h4>access/ImString::from/24</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ImString__from/24/report/pdf.svg">
+                                <img src="../../access/ImString__from/24/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ImString__from/24/report/regression.svg">
+                                <img src="../../access/ImString__from/24/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ImString__from/25/report/index.html">
+                <h4>access/ImString::from/25</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ImString__from/25/report/pdf.svg">
+                                <img src="../../access/ImString__from/25/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ImString__from/25/report/regression.svg">
+                                <img src="../../access/ImString__from/25/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ImString__from/64/report/index.html">
+                <h4>access/ImString::from/64</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ImString__from/64/report/pdf.svg">
+                                <img src="../../access/ImString__from/64/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ImString__from/64/report/regression.svg">
+                                <img src="../../access/ImString__from/64/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/ImString__from/500/report/index.html">
+                <h4>access/ImString::from/500</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/ImString__from/500/report/pdf.svg">
+                                <img src="../../access/ImString__from/500/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/ImString__from/500/report/regression.svg">
+                                <img src="../../access/ImString__from/500/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_ref/0/report/index.html">
+                <h4>access/KString::from_ref/0</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_ref/0/report/pdf.svg">
+                                <img src="../../access/KString__from_ref/0/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_ref/0/report/regression.svg">
+                                <img src="../../access/KString__from_ref/0/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_ref/1/report/index.html">
+                <h4>access/KString::from_ref/1</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_ref/1/report/pdf.svg">
+                                <img src="../../access/KString__from_ref/1/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_ref/1/report/regression.svg">
+                                <img src="../../access/KString__from_ref/1/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_ref/15/report/index.html">
+                <h4>access/KString::from_ref/15</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_ref/15/report/pdf.svg">
+                                <img src="../../access/KString__from_ref/15/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_ref/15/report/regression.svg">
+                                <img src="../../access/KString__from_ref/15/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_ref/22/report/index.html">
+                <h4>access/KString::from_ref/22</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_ref/22/report/pdf.svg">
+                                <img src="../../access/KString__from_ref/22/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_ref/22/report/regression.svg">
+                                <img src="../../access/KString__from_ref/22/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_ref/23/report/index.html">
+                <h4>access/KString::from_ref/23</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_ref/23/report/pdf.svg">
+                                <img src="../../access/KString__from_ref/23/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_ref/23/report/regression.svg">
+                                <img src="../../access/KString__from_ref/23/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_ref/24/report/index.html">
+                <h4>access/KString::from_ref/24</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_ref/24/report/pdf.svg">
+                                <img src="../../access/KString__from_ref/24/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_ref/24/report/regression.svg">
+                                <img src="../../access/KString__from_ref/24/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_ref/25/report/index.html">
+                <h4>access/KString::from_ref/25</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_ref/25/report/pdf.svg">
+                                <img src="../../access/KString__from_ref/25/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_ref/25/report/regression.svg">
+                                <img src="../../access/KString__from_ref/25/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_ref/64/report/index.html">
+                <h4>access/KString::from_ref/64</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_ref/64/report/pdf.svg">
+                                <img src="../../access/KString__from_ref/64/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_ref/64/report/regression.svg">
+                                <img src="../../access/KString__from_ref/64/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_ref/500/report/index.html">
+                <h4>access/KString::from_ref/500</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_ref/500/report/pdf.svg">
+                                <img src="../../access/KString__from_ref/500/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_ref/500/report/regression.svg">
+                                <img src="../../access/KString__from_ref/500/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_string/0/report/index.html">
+                <h4>access/KString::from_string/0</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_string/0/report/pdf.svg">
+                                <img src="../../access/KString__from_string/0/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_string/0/report/regression.svg">
+                                <img src="../../access/KString__from_string/0/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_string/1/report/index.html">
+                <h4>access/KString::from_string/1</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_string/1/report/pdf.svg">
+                                <img src="../../access/KString__from_string/1/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_string/1/report/regression.svg">
+                                <img src="../../access/KString__from_string/1/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_string/15/report/index.html">
+                <h4>access/KString::from_string/15</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_string/15/report/pdf.svg">
+                                <img src="../../access/KString__from_string/15/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_string/15/report/regression.svg">
+                                <img src="../../access/KString__from_string/15/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_string/22/report/index.html">
+                <h4>access/KString::from_string/22</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_string/22/report/pdf.svg">
+                                <img src="../../access/KString__from_string/22/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_string/22/report/regression.svg">
+                                <img src="../../access/KString__from_string/22/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_string/23/report/index.html">
+                <h4>access/KString::from_string/23</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_string/23/report/pdf.svg">
+                                <img src="../../access/KString__from_string/23/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_string/23/report/regression.svg">
+                                <img src="../../access/KString__from_string/23/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_string/24/report/index.html">
+                <h4>access/KString::from_string/24</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_string/24/report/pdf.svg">
+                                <img src="../../access/KString__from_string/24/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_string/24/report/regression.svg">
+                                <img src="../../access/KString__from_string/24/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_string/25/report/index.html">
+                <h4>access/KString::from_string/25</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_string/25/report/pdf.svg">
+                                <img src="../../access/KString__from_string/25/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_string/25/report/regression.svg">
+                                <img src="../../access/KString__from_string/25/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_string/64/report/index.html">
+                <h4>access/KString::from_string/64</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_string/64/report/pdf.svg">
+                                <img src="../../access/KString__from_string/64/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_string/64/report/regression.svg">
+                                <img src="../../access/KString__from_string/64/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/KString__from_string/500/report/index.html">
+                <h4>access/KString::from_string/500</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/KString__from_string/500/report/pdf.svg">
+                                <img src="../../access/KString__from_string/500/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/KString__from_string/500/report/regression.svg">
+                                <img src="../../access/KString__from_string/500/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/SmolStr__new/0/report/index.html">
+                <h4>access/SmolStr::new/0</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/SmolStr__new/0/report/pdf.svg">
+                                <img src="../../access/SmolStr__new/0/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/SmolStr__new/0/report/regression.svg">
+                                <img src="../../access/SmolStr__new/0/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/SmolStr__new/1/report/index.html">
+                <h4>access/SmolStr::new/1</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/SmolStr__new/1/report/pdf.svg">
+                                <img src="../../access/SmolStr__new/1/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/SmolStr__new/1/report/regression.svg">
+                                <img src="../../access/SmolStr__new/1/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/SmolStr__new/15/report/index.html">
+                <h4>access/SmolStr::new/15</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/SmolStr__new/15/report/pdf.svg">
+                                <img src="../../access/SmolStr__new/15/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/SmolStr__new/15/report/regression.svg">
+                                <img src="../../access/SmolStr__new/15/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/SmolStr__new/22/report/index.html">
+                <h4>access/SmolStr::new/22</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/SmolStr__new/22/report/pdf.svg">
+                                <img src="../../access/SmolStr__new/22/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/SmolStr__new/22/report/regression.svg">
+                                <img src="../../access/SmolStr__new/22/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/SmolStr__new/23/report/index.html">
+                <h4>access/SmolStr::new/23</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/SmolStr__new/23/report/pdf.svg">
+                                <img src="../../access/SmolStr__new/23/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/SmolStr__new/23/report/regression.svg">
+                                <img src="../../access/SmolStr__new/23/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/SmolStr__new/24/report/index.html">
+                <h4>access/SmolStr::new/24</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/SmolStr__new/24/report/pdf.svg">
+                                <img src="../../access/SmolStr__new/24/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/SmolStr__new/24/report/regression.svg">
+                                <img src="../../access/SmolStr__new/24/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/SmolStr__new/25/report/index.html">
+                <h4>access/SmolStr::new/25</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/SmolStr__new/25/report/pdf.svg">
+                                <img src="../../access/SmolStr__new/25/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/SmolStr__new/25/report/regression.svg">
+                                <img src="../../access/SmolStr__new/25/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/SmolStr__new/64/report/index.html">
+                <h4>access/SmolStr::new/64</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/SmolStr__new/64/report/pdf.svg">
+                                <img src="../../access/SmolStr__new/64/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/SmolStr__new/64/report/regression.svg">
+                                <img src="../../access/SmolStr__new/64/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/SmolStr__new/500/report/index.html">
+                <h4>access/SmolStr::new/500</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/SmolStr__new/500/report/pdf.svg">
+                                <img src="../../access/SmolStr__new/500/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/SmolStr__new/500/report/regression.svg">
+                                <img src="../../access/SmolStr__new/500/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/String/0/report/index.html">
+                <h4>access/String/0</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/String/0/report/pdf.svg">
+                                <img src="../../access/String/0/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/String/0/report/regression.svg">
+                                <img src="../../access/String/0/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/String/1/report/index.html">
+                <h4>access/String/1</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/String/1/report/pdf.svg">
+                                <img src="../../access/String/1/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/String/1/report/regression.svg">
+                                <img src="../../access/String/1/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/String/15/report/index.html">
+                <h4>access/String/15</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/String/15/report/pdf.svg">
+                                <img src="../../access/String/15/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/String/15/report/regression.svg">
+                                <img src="../../access/String/15/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/String/22/report/index.html">
+                <h4>access/String/22</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/String/22/report/pdf.svg">
+                                <img src="../../access/String/22/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/String/22/report/regression.svg">
+                                <img src="../../access/String/22/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/String/23/report/index.html">
+                <h4>access/String/23</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/String/23/report/pdf.svg">
+                                <img src="../../access/String/23/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/String/23/report/regression.svg">
+                                <img src="../../access/String/23/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/String/24/report/index.html">
+                <h4>access/String/24</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/String/24/report/pdf.svg">
+                                <img src="../../access/String/24/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/String/24/report/regression.svg">
+                                <img src="../../access/String/24/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/String/25/report/index.html">
+                <h4>access/String/25</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/String/25/report/pdf.svg">
+                                <img src="../../access/String/25/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/String/25/report/regression.svg">
+                                <img src="../../access/String/25/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/String/64/report/index.html">
+                <h4>access/String/64</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/String/64/report/pdf.svg">
+                                <img src="../../access/String/64/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/String/64/report/regression.svg">
+                                <img src="../../access/String/64/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/String/500/report/index.html">
+                <h4>access/String/500</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/String/500/report/pdf.svg">
+                                <img src="../../access/String/500/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/String/500/report/regression.svg">
+                                <img src="../../access/String/500/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/StringCow__Owned/0/report/index.html">
+                <h4>access/StringCow::Owned/0</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/StringCow__Owned/0/report/pdf.svg">
+                                <img src="../../access/StringCow__Owned/0/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/StringCow__Owned/0/report/regression.svg">
+                                <img src="../../access/StringCow__Owned/0/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/StringCow__Owned/1/report/index.html">
+                <h4>access/StringCow::Owned/1</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/StringCow__Owned/1/report/pdf.svg">
+                                <img src="../../access/StringCow__Owned/1/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/StringCow__Owned/1/report/regression.svg">
+                                <img src="../../access/StringCow__Owned/1/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/StringCow__Owned/15/report/index.html">
+                <h4>access/StringCow::Owned/15</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/StringCow__Owned/15/report/pdf.svg">
+                                <img src="../../access/StringCow__Owned/15/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/StringCow__Owned/15/report/regression.svg">
+                                <img src="../../access/StringCow__Owned/15/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/StringCow__Owned/22/report/index.html">
+                <h4>access/StringCow::Owned/22</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/StringCow__Owned/22/report/pdf.svg">
+                                <img src="../../access/StringCow__Owned/22/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/StringCow__Owned/22/report/regression.svg">
+                                <img src="../../access/StringCow__Owned/22/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/StringCow__Owned/23/report/index.html">
+                <h4>access/StringCow::Owned/23</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/StringCow__Owned/23/report/pdf.svg">
+                                <img src="../../access/StringCow__Owned/23/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/StringCow__Owned/23/report/regression.svg">
+                                <img src="../../access/StringCow__Owned/23/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/StringCow__Owned/24/report/index.html">
+                <h4>access/StringCow::Owned/24</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/StringCow__Owned/24/report/pdf.svg">
+                                <img src="../../access/StringCow__Owned/24/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/StringCow__Owned/24/report/regression.svg">
+                                <img src="../../access/StringCow__Owned/24/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/StringCow__Owned/25/report/index.html">
+                <h4>access/StringCow::Owned/25</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/StringCow__Owned/25/report/pdf.svg">
+                                <img src="../../access/StringCow__Owned/25/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/StringCow__Owned/25/report/regression.svg">
+                                <img src="../../access/StringCow__Owned/25/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/StringCow__Owned/64/report/index.html">
+                <h4>access/StringCow::Owned/64</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/StringCow__Owned/64/report/pdf.svg">
+                                <img src="../../access/StringCow__Owned/64/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/StringCow__Owned/64/report/regression.svg">
+                                <img src="../../access/StringCow__Owned/64/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/StringCow__Owned/500/report/index.html">
+                <h4>access/StringCow::Owned/500</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/StringCow__Owned/500/report/pdf.svg">
+                                <img src="../../access/StringCow__Owned/500/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/StringCow__Owned/500/report/regression.svg">
+                                <img src="../../access/StringCow__Owned/500/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/flexstr__SharedStr__from_ref/0/report/index.html">
+                <h4>access/flexstr::SharedStr::from_ref/0</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/0/report/pdf.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/0/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/0/report/regression.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/0/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/flexstr__SharedStr__from_ref/1/report/index.html">
+                <h4>access/flexstr::SharedStr::from_ref/1</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/1/report/pdf.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/1/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/1/report/regression.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/1/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/flexstr__SharedStr__from_ref/15/report/index.html">
+                <h4>access/flexstr::SharedStr::from_ref/15</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/15/report/pdf.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/15/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/15/report/regression.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/15/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/flexstr__SharedStr__from_ref/22/report/index.html">
+                <h4>access/flexstr::SharedStr::from_ref/22</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/22/report/pdf.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/22/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/22/report/regression.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/22/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/flexstr__SharedStr__from_ref/23/report/index.html">
+                <h4>access/flexstr::SharedStr::from_ref/23</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/23/report/pdf.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/23/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/23/report/regression.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/23/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/flexstr__SharedStr__from_ref/24/report/index.html">
+                <h4>access/flexstr::SharedStr::from_ref/24</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/24/report/pdf.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/24/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/24/report/regression.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/24/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/flexstr__SharedStr__from_ref/25/report/index.html">
+                <h4>access/flexstr::SharedStr::from_ref/25</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/25/report/pdf.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/25/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/25/report/regression.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/25/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/flexstr__SharedStr__from_ref/64/report/index.html">
+                <h4>access/flexstr::SharedStr::from_ref/64</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/64/report/pdf.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/64/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/64/report/regression.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/64/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/flexstr__SharedStr__from_ref/500/report/index.html">
+                <h4>access/flexstr::SharedStr::from_ref/500</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/500/report/pdf.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/500/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/flexstr__SharedStr__from_ref/500/report/regression.svg">
+                                <img src="../../access/flexstr__SharedStr__from_ref/500/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/smartstring__String__new/0/report/index.html">
+                <h4>access/smartstring::String::new/0</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/smartstring__String__new/0/report/pdf.svg">
+                                <img src="../../access/smartstring__String__new/0/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/smartstring__String__new/0/report/regression.svg">
+                                <img src="../../access/smartstring__String__new/0/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/smartstring__String__new/1/report/index.html">
+                <h4>access/smartstring::String::new/1</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/smartstring__String__new/1/report/pdf.svg">
+                                <img src="../../access/smartstring__String__new/1/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/smartstring__String__new/1/report/regression.svg">
+                                <img src="../../access/smartstring__String__new/1/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/smartstring__String__new/15/report/index.html">
+                <h4>access/smartstring::String::new/15</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/smartstring__String__new/15/report/pdf.svg">
+                                <img src="../../access/smartstring__String__new/15/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/smartstring__String__new/15/report/regression.svg">
+                                <img src="../../access/smartstring__String__new/15/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/smartstring__String__new/22/report/index.html">
+                <h4>access/smartstring::String::new/22</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/smartstring__String__new/22/report/pdf.svg">
+                                <img src="../../access/smartstring__String__new/22/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/smartstring__String__new/22/report/regression.svg">
+                                <img src="../../access/smartstring__String__new/22/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/smartstring__String__new/23/report/index.html">
+                <h4>access/smartstring::String::new/23</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/smartstring__String__new/23/report/pdf.svg">
+                                <img src="../../access/smartstring__String__new/23/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/smartstring__String__new/23/report/regression.svg">
+                                <img src="../../access/smartstring__String__new/23/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/smartstring__String__new/24/report/index.html">
+                <h4>access/smartstring::String::new/24</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/smartstring__String__new/24/report/pdf.svg">
+                                <img src="../../access/smartstring__String__new/24/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/smartstring__String__new/24/report/regression.svg">
+                                <img src="../../access/smartstring__String__new/24/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/smartstring__String__new/25/report/index.html">
+                <h4>access/smartstring::String::new/25</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/smartstring__String__new/25/report/pdf.svg">
+                                <img src="../../access/smartstring__String__new/25/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/smartstring__String__new/25/report/regression.svg">
+                                <img src="../../access/smartstring__String__new/25/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/smartstring__String__new/64/report/index.html">
+                <h4>access/smartstring::String::new/64</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/smartstring__String__new/64/report/pdf.svg">
+                                <img src="../../access/smartstring__String__new/64/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/smartstring__String__new/64/report/regression.svg">
+                                <img src="../../access/smartstring__String__new/64/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="plots">
+            <a href="../../access/smartstring__String__new/500/report/index.html">
+                <h4>access/smartstring::String::new/500</h4>
+            </a>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="../../access/smartstring__String__new/500/report/pdf.svg">
+                                <img src="../../access/smartstring__String__new/500/report/pdf_small.svg" alt="PDF of Slope" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../../access/smartstring__String__new/500/report/regression.svg">
+                                <img src="../../access/smartstring__String__new/500/report/regression_small.svg" alt="Regression" width="450"
+                                    height="300" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div id="footer">
+        <p>This report was generated by
+            <a href="https://github.com/bheisler/criterion.rs">Criterion.rs</a>, a statistics-driven benchmarking
+            library in Rust.</p>
+    </div>
+</body>
+
+</html>
