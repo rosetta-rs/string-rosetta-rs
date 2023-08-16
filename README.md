@@ -4,15 +4,18 @@ This repo tries to assess Rust string types.
 
 We currently compare:
 
-Name                                                  | Heap  | Inline   | `&'static str` | Mutable | Unsafe | Notes
-------------------------------------------------------|-------|----------|----------------|---------|--------|-----
-`String`                                              | **Y** | \-       | N              | **Y**   | \-     | Universal
-`Cow<'static, str>`                                   | **Y** | \-       | **Y**          | N       | \-     |
-[`compact_str`](https://crates.io/crates/compact_str) | **Y** | 24 bytes | N              | **Y**   | **Y** (miri, proptest, fuzz)  | Space optimized for `Option<_>`
-[`flexstr`](https://crates.io/crates/flexstr)         | **Y** | 22 bytes | **Y**          | N       | **Y** (miri) | O(1) clone
-[`kstring`](https://crates.io/crates/kstring)         | **Y** | 15 bytes | **Y**          | N       | Optional (miri, proptest)  | Optional O(1) clone, optional 22 byte small string, Ref/Cow API for preserving `&'static str`
-[`smartstring`](https://crates.io/crates/smartstring) | **Y** | 23 bytes | N              | **Y**   | **Y** (miri, proptest, fuzz)  |
-[`smol_str`](https://crates.io/crates/smol_str)       | **Y** | 22 bytes | N              | N       | **Y** (miri, proptest)  | O(1) clone, Whitespace storage optimizations
+Name                                                  | Size     |Heap  | Inline   | `&'static str` | Mutable | Unsafe | Notes
+------------------------------------------------------|----------|------|----------|----------------|---------|--------|-----
+`String`                                              | 24 bytes | **Y** | \-       | N              | **Y**   | \-     | Universal
+`Cow<'static, str>`                                   | 24 bytes | **Y** | \-       | **Y**          | N       | \-     |
+[`arcstr`](https://crates.io/crates/arcstr)           | 8 bytes  | ?     | ?        | ?              | ?       | ?  | ?
+[`compact_str`](https://crates.io/crates/compact_str) | 24 bytes | **Y** | 24 bytes | N              | **Y**   | **Y** (miri, proptest, fuzz)  | Space optimized for `Option<_>`
+[`flexstr`](https://crates.io/crates/flexstr)         | 24 bytes | **Y** | 22 bytes | **Y**          | N       | **Y** (miri) | O(1) clone
+[`hipstr`](https://crates.io/crates/hipstr)           | 24 bytes | ?     | ?        | ?              | ?       | ?  | ?
+[`imstr`](https://crates.io/crates/imstr)             | 24 bytes | ?     | ?        | ?              | ?       | ?  | ?
+[`kstring`](https://crates.io/crates/kstring)         | 24 bytes | **Y** | 15 bytes | **Y**          | N       | Optional (miri, proptest)  | Optional O(1) clone, optional 22 byte small string, Ref/Cow API for preserving `&'static str`
+[`smartstring`](https://crates.io/crates/smartstring) | 24 bytes | **Y** | 23 bytes | N              | **Y**   | **Y** (miri, proptest, fuzz)  |
+[`smol_str`](https://crates.io/crates/smol_str)       | 24 bytes | **Y** | 22 bytes | N              | N       | **Y** (miri, proptest)  | O(1) clone, Whitespace storage optimizations
 
 Suggestions:
 - Generally, `String`

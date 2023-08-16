@@ -31,6 +31,11 @@ fn bench_new(c: &mut Criterion) {
             let fixture = criterion::black_box(*fixture);
             b.iter(|| StringCow::Owned(String::from(fixture)))
         });
+
+        group.bench_with_input(BenchmarkId::new("ArcStr::from", len), &len, |b, _| {
+            let fixture = criterion::black_box(*fixture);
+            b.iter(|| arcstr::ArcStr::from(fixture))
+        });
         group.bench_with_input(BenchmarkId::new("CompactString::new", len), &len, |b, _| {
             let fixture = criterion::black_box(*fixture);
             b.iter(|| compact_str::CompactString::new(fixture))
@@ -43,6 +48,14 @@ fn bench_new(c: &mut Criterion) {
                 b.iter(|| flexstr::SharedStr::from_ref(fixture))
             },
         );
+        group.bench_with_input(BenchmarkId::new("HipStr::from", len), &len, |b, _| {
+            let fixture = criterion::black_box(*fixture);
+            b.iter(|| hipstr::HipStr::from(fixture))
+        });
+        group.bench_with_input(BenchmarkId::new("ImString::from", len), &len, |b, _| {
+            let fixture = criterion::black_box(*fixture);
+            b.iter(|| imstr::ImString::from(fixture))
+        });
         group.bench_with_input(BenchmarkId::new("KString::from_ref", len), &len, |b, _| {
             let fixture = criterion::black_box(*fixture);
             b.iter(|| kstring::KString::from_ref(fixture))
@@ -66,18 +79,6 @@ fn bench_new(c: &mut Criterion) {
         group.bench_with_input(BenchmarkId::new("SmolStr::new", len), &len, |b, _| {
             let fixture = criterion::black_box(*fixture);
             b.iter(|| smol_str::SmolStr::new(fixture))
-        });
-        group.bench_with_input(BenchmarkId::new("ArcStr::from", len), &len, |b, _| {
-            let fixture = criterion::black_box(*fixture);
-            b.iter(|| arcstr::ArcStr::from(fixture))
-        });
-        group.bench_with_input(BenchmarkId::new("HipStr::from", len), &len, |b, _| {
-            let fixture = criterion::black_box(*fixture);
-            b.iter(|| hipstr::HipStr::from(fixture))
-        });
-        group.bench_with_input(BenchmarkId::new("ImString::from", len), &len, |b, _| {
-            let fixture = criterion::black_box(*fixture);
-            b.iter(|| imstr::ImString::from(fixture))
         });
     }
     group.finish();

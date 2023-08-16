@@ -35,6 +35,12 @@ fn bench_access(c: &mut Criterion) {
             let uut = criterion::black_box(uut);
             b.iter(|| uut.is_empty())
         });
+
+        group.bench_with_input(BenchmarkId::new("ArcStr::from", len), &len, |b, _| {
+            let uut = arcstr::ArcStr::from(*fixture);
+            let uut = criterion::black_box(uut);
+            b.iter(|| uut.is_empty())
+        });
         group.bench_with_input(BenchmarkId::new("CompactString::new", len), &len, |b, _| {
             let uut = compact_str::CompactString::new(fixture);
             let uut = criterion::black_box(uut);
@@ -49,6 +55,16 @@ fn bench_access(c: &mut Criterion) {
                 b.iter(|| uut.is_empty())
             },
         );
+        group.bench_with_input(BenchmarkId::new("HipStr::from", len), &len, |b, _| {
+            let uut = hipstr::HipStr::from(*fixture);
+            let uut = criterion::black_box(uut);
+            b.iter(|| uut.is_empty())
+        });
+        group.bench_with_input(BenchmarkId::new("ImString::from", len), &len, |b, _| {
+            let uut = imstr::ImString::from(*fixture);
+            let uut = criterion::black_box(uut);
+            b.iter(|| uut.is_empty())
+        });
         group.bench_with_input(BenchmarkId::new("KString::from_ref", len), &len, |b, _| {
             let uut = kstring::KString::from_ref(*fixture);
             let uut = criterion::black_box(uut);
@@ -74,21 +90,6 @@ fn bench_access(c: &mut Criterion) {
         );
         group.bench_with_input(BenchmarkId::new("SmolStr::new", len), &len, |b, _| {
             let uut = smol_str::SmolStr::new(fixture);
-            let uut = criterion::black_box(uut);
-            b.iter(|| uut.is_empty())
-        });
-        group.bench_with_input(BenchmarkId::new("ArcStr::from", len), &len, |b, _| {
-            let uut = arcstr::ArcStr::from(*fixture);
-            let uut = criterion::black_box(uut);
-            b.iter(|| uut.is_empty())
-        });
-        group.bench_with_input(BenchmarkId::new("HipStr::from", len), &len, |b, _| {
-            let uut = hipstr::HipStr::from(*fixture);
-            let uut = criterion::black_box(uut);
-            b.iter(|| uut.is_empty())
-        });
-        group.bench_with_input(BenchmarkId::new("ImString::from", len), &len, |b, _| {
-            let uut = imstr::ImString::from(*fixture);
             let uut = criterion::black_box(uut);
             b.iter(|| uut.is_empty())
         });
