@@ -77,6 +77,21 @@ fn bench_clone(c: &mut Criterion) {
             let uut = criterion::black_box(uut);
             b.iter(|| uut.clone())
         });
+        group.bench_with_input(BenchmarkId::new("ArcStr::from", len), &len, |b, _| {
+            let uut = arcstr::ArcStr::from(*fixture);
+            let uut = criterion::black_box(uut);
+            b.iter(|| uut.clone())
+        });
+        group.bench_with_input(BenchmarkId::new("HipStr::from", len), &len, |b, _| {
+            let uut = hipstr::HipStr::from(*fixture);
+            let uut = criterion::black_box(uut);
+            b.iter(|| uut.clone())
+        });
+        group.bench_with_input(BenchmarkId::new("ImString::from", len), &len, |b, _| {
+            let uut = imstr::ImString::from(*fixture);
+            let uut = criterion::black_box(uut);
+            b.iter(|| uut.clone())
+        });
     }
     group.finish();
 }

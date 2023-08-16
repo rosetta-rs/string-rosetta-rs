@@ -67,6 +67,18 @@ fn bench_new(c: &mut Criterion) {
             let fixture = criterion::black_box(*fixture);
             b.iter(|| smol_str::SmolStr::new(fixture))
         });
+        group.bench_with_input(BenchmarkId::new("ArcStr::from", len), &len, |b, _| {
+            let fixture = criterion::black_box(*fixture);
+            b.iter(|| arcstr::ArcStr::from(fixture))
+        });
+        group.bench_with_input(BenchmarkId::new("HipStr::from", len), &len, |b, _| {
+            let fixture = criterion::black_box(*fixture);
+            b.iter(|| hipstr::HipStr::from(fixture))
+        });
+        group.bench_with_input(BenchmarkId::new("ImString::from", len), &len, |b, _| {
+            let fixture = criterion::black_box(*fixture);
+            b.iter(|| imstr::ImString::from(fixture))
+        });
     }
     group.finish();
 }
