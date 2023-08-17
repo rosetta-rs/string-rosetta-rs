@@ -16,7 +16,6 @@ Name                                                  | Size     | Heap  | Inlin
 [`imstr`](https://crates.io/crates/imstr)             | 24 bytes | ?     | ?        | ?              | ?       | ?  | ?
 [`kstring`](https://crates.io/crates/kstring)         | 24 bytes | **Y** | 15 bytes | **Y**          | N       | Optional (miri, proptest)  | Optional O(1) clone, optional 22 byte small string, Ref/Cow API for preserving `&'static str`
 [`smartstring`](https://crates.io/crates/smartstring) | 24 bytes | **Y** | 23 bytes | N              | **Y**   | **Y** (miri, proptest, fuzz)  |
-[`smol_str`](https://crates.io/crates/smol_str)       | 24 bytes | **Y** | 22 bytes | N              | N       | **Y** (miri, proptest)  | O(1) clone, Whitespace storage optimizations
 
 Suggestions:
 - Generally, `String`
@@ -27,6 +26,8 @@ Suggestions:
   - Try different crates and settings for that crate out with a profiler
   - O(1) clones are important when doing a lot of clones.  For one-off allocations, they are slower.
   - For short-lived programs, look into string interning
+
+Note: `smol_str` was removed [in favor of `ecow`](https://www.reddit.com/r/rust/comments/117ksvr/ecow_compact_cloneonwrite_vector_and_string/j9eh35d/)
 
 Terms:
 - Heap: will store strings in heap-allocated memory

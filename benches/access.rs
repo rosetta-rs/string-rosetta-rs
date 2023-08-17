@@ -93,11 +93,6 @@ fn bench_access(c: &mut Criterion) {
                 b.iter(|| uut.is_empty())
             },
         );
-        group.bench_with_input(BenchmarkId::new("SmolStr::new", len), &len, |b, _| {
-            let uut = smol_str::SmolStr::new(fixture);
-            let uut = criterion::black_box(uut);
-            b.iter(|| uut.is_empty())
-        });
     }
     group.finish();
 }

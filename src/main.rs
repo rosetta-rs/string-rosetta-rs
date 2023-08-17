@@ -23,5 +23,4 @@ fn main() {
         "SmartString {} bytes",
         std::mem::size_of::<smartstring::alias::String>()
     );
-    println!("SmolStr {} bytes", std::mem::size_of::<smol_str::SmolStr>());
 }

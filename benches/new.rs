@@ -80,10 +80,6 @@ fn bench_new(c: &mut Criterion) {
                 b.iter(|| smartstring::alias::String::from(fixture))
             },
         );
-        group.bench_with_input(BenchmarkId::new("SmolStr::new", len), &len, |b, _| {
-            let fixture = criterion::black_box(*fixture);
-            b.iter(|| smol_str::SmolStr::new(fixture))
-        });
     }
     group.finish();
 }
