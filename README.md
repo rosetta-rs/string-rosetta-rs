@@ -36,19 +36,19 @@ Terms:
 # Results
 
 `new` summary:
-[![`new`](runs/2023-08-16/new/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-16/new/report/index.html)
+[![`new`](runs/2023-08-17/new/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-17/new/report/index.html)
 
-See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-16/new/report/index.html)
+See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-17/new/report/index.html)
 
 `clone` summary:
-[![`clone`](runs/2023-08-16/clone/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-16/clone/report/index.html)
+[![`clone`](runs/2023-08-17/clone/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-17/clone/report/index.html)
 
-See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-16/clone/report/index.html)
+See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-17/clone/report/index.html)
 
 `access` summary:
-[![`access`](runs/2023-08-16/access/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-16/access/report/index.html)
+[![`access`](runs/2023-08-17/access/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-17/access/report/index.html)
 
-See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-16/access/report/index.html)
+See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-17/access/report/index.html)
 
 # Special Thanks
 
