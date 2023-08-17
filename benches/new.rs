@@ -40,6 +40,10 @@ fn bench_new(c: &mut Criterion) {
             let fixture = criterion::black_box(*fixture);
             b.iter(|| compact_str::CompactString::new(fixture))
         });
+        group.bench_with_input(BenchmarkId::new("EcoString::from", len), &len, |b, _| {
+            let fixture = criterion::black_box(*fixture);
+            b.iter(|| ecow::EcoString::from(fixture))
+        });
         group.bench_with_input(
             BenchmarkId::new("flexstr::SharedStr::from_ref", len),
             &len,

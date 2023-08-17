@@ -4,12 +4,13 @@ This repo tries to assess Rust string types.
 
 We currently compare:
 
-Name                                                  | Size     |Heap  | Inline   | `&'static str` | Mutable | Unsafe | Notes
-------------------------------------------------------|----------|------|----------|----------------|---------|--------|-----
+Name                                                  | Size     | Heap  | Inline   | `&'static str` | Mutable | Unsafe | Notes
+------------------------------------------------------|----------|-------|----------|----------------|---------|--------|-----
 `String`                                              | 24 bytes | **Y** | \-       | N              | **Y**   | \-     | Universal
 `Cow<'static, str>`                                   | 24 bytes | **Y** | \-       | **Y**          | N       | \-     |
 [`arcstr`](https://crates.io/crates/arcstr)           | 8 bytes  | ?     | ?        | ?              | ?       | ?  | ?
 [`compact_str`](https://crates.io/crates/compact_str) | 24 bytes | **Y** | 24 bytes | N              | **Y**   | **Y** (miri, proptest, fuzz)  | Space optimized for `Option<_>`
+[`ecow`](https://crates.io/crates/ecow)               | 16 bytes | ?     | ?        | ?              | ?       | ?  | ?
 [`flexstr`](https://crates.io/crates/flexstr)         | 24 bytes | **Y** | 22 bytes | **Y**          | N       | **Y** (miri) | O(1) clone
 [`hipstr`](https://crates.io/crates/hipstr)           | 24 bytes | ?     | ?        | ?              | ?       | ?  | ?
 [`imstr`](https://crates.io/crates/imstr)             | 24 bytes | ?     | ?        | ?              | ?       | ?  | ?

@@ -11,6 +11,7 @@ fn main() {
         "CompactString {} bytes",
         std::mem::size_of::<compact_str::CompactString>()
     );
+    println!("ecow {} bytes", std::mem::size_of::<ecow::EcoString>());
     println!(
         "FlexStr {} bytes",
         std::mem::size_of::<flexstr::SharedStr>()

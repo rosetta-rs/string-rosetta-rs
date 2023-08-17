@@ -213,6 +213,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "ecow"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c5c5051925c54d9a42c8652313b5358a7432eed209466b443ed5220431243a14"
+
+[[package]]
 name = "either"
 version = "1.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -595,6 +601,7 @@ dependencies = [
  "arcstr",
  "compact_str",
  "criterion",
+ "ecow",
  "flexstr",
  "hipstr",
  "imstr",

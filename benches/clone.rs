@@ -46,6 +46,11 @@ fn bench_clone(c: &mut Criterion) {
             let uut = criterion::black_box(uut);
             b.iter(|| uut.clone())
         });
+        group.bench_with_input(BenchmarkId::new("EcoString::from", len), &len, |b, _| {
+            let uut = ecow::EcoString::from(*fixture);
+            let uut = criterion::black_box(uut);
+            b.iter(|| uut.clone())
+        });
         group.bench_with_input(
             BenchmarkId::new("flexstr::SharedStr::from_ref", len),
             &len,
