@@ -214,9 +214,9 @@ dependencies = [
 
 [[package]]
 name = "ecow"
-version = "0.1.1"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c5c5051925c54d9a42c8652313b5358a7432eed209466b443ed5220431243a14"
+checksum = "1d1990d053cf6edf3f030682dba3b0eb65ef01fabb2686072765d8a17d6728e8"
 
 [[package]]
 name = "either"
@@ -277,9 +277,9 @@ checksum = "fed44880c466736ef9a5c5b5facefb5ed0785676d0c02d612db14e54f0d84286"
 
 [[package]]
 name = "hipstr"
-version = "0.3.1"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "01bac514614763981e4bbd58535b9bfa708b8768e47e22ba51219922d9051457"
+checksum = "3550fec47d24ea42a8323d2c6cce8f8cef994031f4289bdd323960b1fe5750af"
 
 [[package]]
 name = "imstr"
