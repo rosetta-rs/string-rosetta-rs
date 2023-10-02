@@ -7,9 +7,9 @@ publish = false
 [dependencies]
 arcstr = "1.1.5"
 compact_str = "0.7"
-ecow = "0.1.1"
+ecow = "0.1.2"
 flexstr = "0.9.2"
-hipstr = "0.3.1"
+hipstr = "0.3.2"
 imstr = "0.2.0"
 kstring = "2.0.0"
 smartstring = "1.0.1"
