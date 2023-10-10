@@ -133,7 +133,9 @@ fn bench_access_static(c: &mut Criterion) {
         group.bench_with_input(BenchmarkId::new("&'static str", len), &len, |b, _| {
             let uut = *fixture;
             let uut = criterion::black_box(uut);
-            b.iter(|| uut.is_empty())
+            let copy = uut.clone();
+            let copy = criterion::black_box(copy);
+            b.iter(|| uut == copy)
         });
         group.bench_with_input(
             BenchmarkId::new("StringCow::Borrowed", len),
@@ -141,7 +143,9 @@ fn bench_access_static(c: &mut Criterion) {
             |b, _| {
                 let uut = StringCow::Borrowed(*fixture);
                 let uut = criterion::black_box(uut);
-                b.iter(|| uut.is_empty())
+                let copy = uut.clone();
+                let copy = criterion::black_box(copy);
+                b.iter(|| uut == copy)
             },
         );
         group.bench_with_input(
@@ -150,7 +154,9 @@ fn bench_access_static(c: &mut Criterion) {
             |b, _| {
                 let uut = flexstr::SharedStr::from_static(*fixture);
                 let uut = criterion::black_box(uut);
-                b.iter(|| uut.is_empty())
+                let copy = uut.clone();
+                let copy = criterion::black_box(copy);
+                b.iter(|| uut == copy)
             },
         );
         group.bench_with_input(
@@ -159,7 +165,9 @@ fn bench_access_static(c: &mut Criterion) {
             |b, _| {
                 let uut = kstring::KString::from_static(*fixture);
                 let uut = criterion::black_box(uut);
-                b.iter(|| uut.is_empty())
+                let copy = uut.clone();
+                let copy = criterion::black_box(copy);
+                b.iter(|| uut == copy)
             },
         );
     }
