@@ -29,5 +29,9 @@ harness = false
 name = "access"
 harness = false
 
+[[bench]]
+name = "eq"
+harness = false
+
 [profile.release]
 debug = 1
