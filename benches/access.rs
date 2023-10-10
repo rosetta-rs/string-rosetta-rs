@@ -84,6 +84,7 @@ fn bench_access(c: &mut Criterion) {
                 b.iter(|| uut.is_empty())
             },
         );
+        /* Skipped: orders of magnitude slower
         group.bench_with_input(
             BenchmarkId::new("smartstring::String::new", len),
             &len,
@@ -93,6 +94,7 @@ fn bench_access(c: &mut Criterion) {
                 b.iter(|| uut.is_empty())
             },
         );
+        */
     }
     group.finish();
 }

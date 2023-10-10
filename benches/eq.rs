@@ -108,6 +108,7 @@ fn bench_access(c: &mut Criterion) {
                 b.iter(|| uut == copy)
             },
         );
+        /* Skipped: orders of magnitude slower
         group.bench_with_input(
             BenchmarkId::new("smartstring::String::new", len),
             &len,
@@ -119,6 +120,7 @@ fn bench_access(c: &mut Criterion) {
                 b.iter(|| uut == copy)
             },
         );
+        */
     }
     group.finish();
 }

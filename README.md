@@ -48,6 +48,8 @@ See [more details](https://htmlpreview.github.io/?https://github.com/epage/strin
 `access` summary:
 [![`access`](runs/2023-08-17/access/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-17/access/report/index.html)
 
+*(`smartstring` is skipped due to how slow it is)*
+
 See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-08-17/access/report/index.html)
 
 # Special Thanks
