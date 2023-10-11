@@ -52,10 +52,10 @@ See [more details](https://htmlpreview.github.io/?https://github.com/epage/strin
 
 See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-10-10/access/report/index.html)
 
-`eq` summary:
-[![`eq`](runs/2023-10-10/eq/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-10-10/eq/report/index.html)
+`self_eq` summary:
+[![`self_eq`](runs/2023-10-10/self_eq/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-10-10/self_eq/report/index.html)
 
-See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-10-10/eq/report/index.html)
+See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-10-10/self_eq/report/index.html)
 
 # Special Thanks
 

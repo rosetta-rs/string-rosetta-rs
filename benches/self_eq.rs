@@ -10,8 +10,8 @@ mod fixture;
 
 type StringCow<'s> = std::borrow::Cow<'s, str>;
 
-fn bench_eq(c: &mut Criterion) {
-    let mut group = c.benchmark_group("eq");
+fn bench_self_eq(c: &mut Criterion) {
+    let mut group = c.benchmark_group("self_eq");
     for fixture in fixture::SAMPLES {
         let len = fixture.len();
         group.throughput(Throughput::Bytes(len as u64));
@@ -125,8 +125,8 @@ fn bench_eq(c: &mut Criterion) {
     group.finish();
 }
 
-fn bench_eq_static(c: &mut Criterion) {
-    let mut group = c.benchmark_group("eq_static");
+fn bench_self_eq_static(c: &mut Criterion) {
+    let mut group = c.benchmark_group("self_eq_static");
     for fixture in fixture::SAMPLES {
         let len = fixture.len();
         group.throughput(Throughput::Bytes(len as u64));
@@ -174,5 +174,5 @@ fn bench_eq_static(c: &mut Criterion) {
     group.finish();
 }
 
-criterion_group!(benches, bench_eq, bench_eq_static);
+criterion_group!(benches, bench_self_eq, bench_self_eq_static);
 criterion_main!(benches);

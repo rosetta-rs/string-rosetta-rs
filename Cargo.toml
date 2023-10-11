@@ -30,7 +30,7 @@ name = "access"
 harness = false
 
 [[bench]]
-name = "eq"
+name = "self_eq"
 harness = false
 
 [profile.release]
