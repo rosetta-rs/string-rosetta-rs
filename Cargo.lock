@@ -277,9 +277,9 @@ checksum = "fed44880c466736ef9a5c5b5facefb5ed0785676d0c02d612db14e54f0d84286"
 
 [[package]]
 name = "hipstr"
-version = "0.3.2"
+version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3550fec47d24ea42a8323d2c6cce8f8cef994031f4289bdd323960b1fe5750af"
+checksum = "703b5fe05ba6dcbc893dc6bfe653cc688463c8590fa455391850e345a1a499cb"
 
 [[package]]
 name = "imstr"
