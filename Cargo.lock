@@ -277,9 +277,9 @@ checksum = "fed44880c466736ef9a5c5b5facefb5ed0785676d0c02d612db14e54f0d84286"
 
 [[package]]
 name = "hipstr"
-version = "0.4.0"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e535821a824c40caf2343facf7024f1154658e4228dd9766bab5beab253ab1bd"
+checksum = "5c2445379726def7fb67e361849383b3b043bb03dc2273d22c5f75a6efae6b22"
 dependencies = [
  "serde",
  "serde_bytes",
