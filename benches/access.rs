@@ -128,6 +128,15 @@ fn bench_access_static(c: &mut Criterion) {
             },
         );
         group.bench_with_input(
+            BenchmarkId::new("hipstr::HipStr::borrowed", len),
+            &len,
+            |b, _| {
+                let uut = hipstr::HipStr::borrowed(*fixture);
+                let uut = criterion::black_box(uut);
+                b.iter(|| uut.is_empty())
+            },
+        );
+        group.bench_with_input(
             BenchmarkId::new("KString::from_static", len),
             &len,
             |b, _| {
