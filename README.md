@@ -12,7 +12,7 @@ Name                                                  | Size     | Heap  | Inlin
 [`compact_str`](https://crates.io/crates/compact_str) | 24 bytes | **Y** | 24 bytes | **Y**          | **Y**   | **Y** (miri, proptest, fuzz)  | Space optimized for `Option<_>`
 [`ecow`](https://crates.io/crates/ecow)               | 16 bytes | **Y** | 15 bytes | N              | **Y**   | **Y** (miri) | O(1) clone unless mutated, Space optimized for `Option<_>`
 [`flexstr`](https://crates.io/crates/flexstr)         | 24 bytes | **Y** | 22 bytes | **Y**          | N       | **Y** (miri) | O(1) clone
-[`hipstr`](https://crates.io/crates/hipstr)           | 24 bytes | ?     | 23 bytes | ?              | ?       | ?  | ?
+[`hipstr`](https://crates.io/crates/hipstr)           | 24 bytes | **Y** | 23 bytes | **Y**          | **Y**   | **Y** (miri) | O(1) clone, O(1) substring
 [`imstr`](https://crates.io/crates/imstr)             | 24 bytes | ?     | ?        | ?              | ?       | ?  | ?
 [`kstring`](https://crates.io/crates/kstring)         | 24 bytes | **Y** | 15 bytes | **Y**          | N       | Optional (miri, proptest)  | Optional O(1) clone, optional 22 byte small string, Ref/Cow API for preserving `&'static str`
 [`smartstring`](https://crates.io/crates/smartstring) | 24 bytes | **Y** | 23 bytes | N              | **Y**   | **Y** (miri, proptest, fuzz)  |
