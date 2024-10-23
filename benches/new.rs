@@ -105,7 +105,14 @@ fn bench_new_static(c: &mut Criterion) {
                 b.iter(|| flexstr::SharedStr::from_static(fixture))
             },
         );
-
+        group.bench_with_input(
+            BenchmarkId::new("hipstr::HipStr::borrowed", len),
+            &len,
+            |b, _| {
+                let fixture = criterion::black_box(*fixture);
+                b.iter(|| hipstr::HipStr::borrowed(fixture))
+            },
+        );
         group.bench_with_input(
             BenchmarkId::new("KString::from_static", len),
             &len,

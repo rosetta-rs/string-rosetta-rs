@@ -160,6 +160,17 @@ fn bench_self_eq_static(c: &mut Criterion) {
             },
         );
         group.bench_with_input(
+            BenchmarkId::new("hipstr::HipStr::borrowed", len),
+            &len,
+            |b, _| {
+                let uut = hipstr::HipStr::borrowed(*fixture);
+                let uut = criterion::black_box(uut);
+                let copy = uut.clone();
+                let copy = criterion::black_box(copy);
+                b.iter(|| uut == copy)
+            },
+        );
+        group.bench_with_input(
             BenchmarkId::new("KString::from_static", len),
             &len,
             |b, _| {
