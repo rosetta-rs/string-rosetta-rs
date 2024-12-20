@@ -104,6 +104,14 @@ fn bench_new_static(c: &mut Criterion) {
             },
         );
         group.bench_with_input(
+            BenchmarkId::new("CompactString::const_new", len),
+            &len,
+            |b, _| {
+                let fixture = std::hint::black_box(*fixture);
+                b.iter(|| compact_str::CompactString::const_new(fixture))
+            },
+        );
+        group.bench_with_input(
             BenchmarkId::new("flexstr::SharedStr::from_static", len),
             &len,
             |b, _| {

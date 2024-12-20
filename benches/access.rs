@@ -125,6 +125,15 @@ fn bench_access_static(c: &mut Criterion) {
             },
         );
         group.bench_with_input(
+            BenchmarkId::new("CompactString::const_new", len),
+            &len,
+            |b, _| {
+                let uut = compact_str::CompactString::const_new(*fixture);
+                let uut = std::hint::black_box(uut);
+                b.iter(|| uut.is_empty())
+            },
+        );
+        group.bench_with_input(
             BenchmarkId::new("flexstr::SharedStr::from_static", len),
             &len,
             |b, _| {
