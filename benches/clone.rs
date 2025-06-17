@@ -12,6 +12,9 @@ type StringCow<'s> = std::borrow::Cow<'s, str>;
 
 fn bench_clone(c: &mut Criterion) {
     let mut group = c.benchmark_group("clone");
+    group.plot_config(
+        criterion::PlotConfiguration::default().summary_scale(criterion::AxisScale::Logarithmic),
+    );
     for fixture in fixture::SAMPLES {
         let len = fixture.len();
         group.throughput(Throughput::Bytes(len as u64));
@@ -99,6 +102,9 @@ fn bench_clone(c: &mut Criterion) {
 
 fn bench_clone_static(c: &mut Criterion) {
     let mut group = c.benchmark_group("clone_static");
+    group.plot_config(
+        criterion::PlotConfiguration::default().summary_scale(criterion::AxisScale::Logarithmic),
+    );
     for fixture in fixture::SAMPLES {
         let len = fixture.len();
         group.throughput(Throughput::Bytes(len as u64));

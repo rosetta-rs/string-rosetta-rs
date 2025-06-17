@@ -12,6 +12,9 @@ type StringCow<'s> = std::borrow::Cow<'s, str>;
 
 fn bench_new(c: &mut Criterion) {
     let mut group = c.benchmark_group("new");
+    group.plot_config(
+        criterion::PlotConfiguration::default().summary_scale(criterion::AxisScale::Logarithmic),
+    );
     for fixture in fixture::SAMPLES {
         let len = fixture.len();
         group.throughput(Throughput::Bytes(len as u64));
@@ -86,6 +89,9 @@ fn bench_new(c: &mut Criterion) {
 
 fn bench_new_static(c: &mut Criterion) {
     let mut group = c.benchmark_group("new_static");
+    group.plot_config(
+        criterion::PlotConfiguration::default().summary_scale(criterion::AxisScale::Logarithmic),
+    );
     for fixture in fixture::SAMPLES {
         let len = fixture.len();
         group.throughput(Throughput::Bytes(len as u64));
