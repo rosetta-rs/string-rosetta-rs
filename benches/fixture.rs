@@ -5,6 +5,8 @@ pub const SAMPLES: &[&str] = &[
     "1",
     // kstring's max small-string size
     "123456789012345",
+    // lean_string's max small-string size
+    "1234567890123456",
     // Boundary conditions for most small-string optimizations
     "1234567890123456789012",
     "12345678901234567890123",

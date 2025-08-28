@@ -15,6 +15,7 @@ Name                                                  | Size     | Heap  | Inlin
 [`hipstr`](https://crates.io/crates/hipstr)           | 24 bytes | **Y** | 23 bytes | **Y**          | **Y**   | **Y** (miri) | O(1) clone, O(1) substring
 [`imstr`](https://crates.io/crates/imstr)             | 24 bytes | ?     | ?        | ?              | ?       | ?  | ?
 [`kstring`](https://crates.io/crates/kstring)         | 24 bytes | **Y** | 15 bytes | **Y**          | N       | Optional (miri, proptest)  | Optional O(1) clone, optional 22 byte small string, Ref/Cow API for preserving `&'static str`
+[`lean_string`](https://crates.io/crates/lean_string) | 16 bytes | **Y** | 16 bytes | **Y**          | **Y**   | **Y** (miri, proptest)  | O(1) clone unless mutated, Space optimized for `Option<_>`
 [`smartstring`](https://crates.io/crates/smartstring) | 24 bytes | **Y** | 23 bytes | N              | **Y**   | **Y** (miri, proptest, fuzz)  |
 
 Suggestions:
