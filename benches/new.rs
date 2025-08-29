@@ -71,6 +71,10 @@ fn bench_new(c: &mut Criterion) {
                 b.iter(|| kstring::KString::from_string(String::from(fixture)))
             },
         );
+        group.bench_with_input(BenchmarkId::new("LeanString::from", len), &len, |b, _| {
+            let fixture = std::hint::black_box(*fixture);
+            b.iter(|| lean_string::LeanString::from(fixture))
+        });
         group.bench_with_input(
             BenchmarkId::new("smartstring::String::new", len),
             &len,
@@ -129,6 +133,14 @@ fn bench_new_static(c: &mut Criterion) {
             |b, _| {
                 let fixture = std::hint::black_box(*fixture);
                 b.iter(|| kstring::KString::from_static(fixture))
+            },
+        );
+        group.bench_with_input(
+            BenchmarkId::new("LeanString::from_static_str", len),
+            &len,
+            |b, _| {
+                let fixture = std::hint::black_box(*fixture);
+                b.iter(|| lean_string::LeanString::from_static_str(fixture))
             },
         );
     }

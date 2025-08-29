@@ -112,6 +112,13 @@ fn bench_self_eq(c: &mut Criterion) {
                 b.iter(|| uut == copy)
             },
         );
+        group.bench_with_input(BenchmarkId::new("LeanString::from", len), &len, |b, _| {
+            let uut = lean_string::LeanString::from(*fixture);
+            let uut = std::hint::black_box(uut);
+            let copy = uut.clone();
+            let copy = std::hint::black_box(copy);
+            b.iter(|| uut == copy)
+        });
         /* Skipped: orders of magnitude slower
         group.bench_with_input(
             BenchmarkId::new("smartstring::String::new", len),
@@ -193,6 +200,17 @@ fn bench_self_eq_static(c: &mut Criterion) {
             &len,
             |b, _| {
                 let uut = kstring::KString::from_static(*fixture);
+                let uut = std::hint::black_box(uut);
+                let copy = uut.clone();
+                let copy = std::hint::black_box(copy);
+                b.iter(|| uut == copy)
+            },
+        );
+        group.bench_with_input(
+            BenchmarkId::new("LeanString::from_static_str", len),
+            &len,
+            |b, _| {
+                let uut = lean_string::LeanString::from_static_str(*fixture);
                 let uut = std::hint::black_box(uut);
                 let copy = uut.clone();
                 let copy = std::hint::black_box(copy);

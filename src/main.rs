@@ -20,6 +20,10 @@ fn main() {
     println!("ImString {} bytes", std::mem::size_of::<imstr::ImString>());
     println!("KString {} bytes", std::mem::size_of::<kstring::KString>());
     println!(
+        "LeanString {} bytes",
+        std::mem::size_of::<lean_string::LeanString>()
+    );
+    println!(
         "SmartString {} bytes",
         std::mem::size_of::<smartstring::alias::String>()
     );

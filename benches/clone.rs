@@ -88,6 +88,11 @@ fn bench_clone(c: &mut Criterion) {
                 b.iter(|| uut.clone())
             },
         );
+        group.bench_with_input(BenchmarkId::new("LeanString::from", len), &len, |b, _| {
+            let uut = lean_string::LeanString::from(*fixture);
+            let uut = std::hint::black_box(uut);
+            b.iter(|| uut.clone())
+        });
         group.bench_with_input(
             BenchmarkId::new("smartstring::String::new", len),
             &len,
@@ -155,6 +160,15 @@ fn bench_clone_static(c: &mut Criterion) {
             &len,
             |b, _| {
                 let uut = kstring::KString::from_static(*fixture);
+                let uut = std::hint::black_box(uut);
+                b.iter(|| uut.clone())
+            },
+        );
+        group.bench_with_input(
+            BenchmarkId::new("LeanString::from_static_str", len),
+            &len,
+            |b, _| {
+                let uut = lean_string::LeanString::from_static_str(*fixture);
                 let uut = std::hint::black_box(uut);
                 b.iter(|| uut.clone())
             },

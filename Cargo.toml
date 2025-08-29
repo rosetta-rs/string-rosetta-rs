@@ -12,6 +12,7 @@ flexstr = "0.9.2"
 hipstr = "0.8.0"
 imstr = "0.2.0"
 kstring = "2.0.0"
+lean_string = "0.5.1"
 smartstring = "1.0.1"
 
 [dev-dependencies]
