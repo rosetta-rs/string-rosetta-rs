@@ -37,24 +37,24 @@ Terms:
 # Results
 
 `new` summary:
-[![`new`](runs/2025-08-29/new/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-10-10/new/report/index.html)
+[![`new`](runs/2025-08-29/new/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2025-08-29/new/report/index.html)
 
 See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2025-08-29/new/report/index.html)
 
 `clone` summary:
-[![`clone`](runs/2025-08-29/clone/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-10-10/clone/report/index.html)
+[![`clone`](runs/2025-08-29/clone/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2025-08-29/clone/report/index.html)
 
 See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2025-08-29/clone/report/index.html)
 
 `access` summary:
-[![`access`](runs/2025-08-29/access/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-10-10/access/report/index.html)
+[![`access`](runs/2025-08-29/access/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2025-08-29/access/report/index.html)
 
 *(`smartstring` is skipped due to how slow it is)*
 
 See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2025-08-29/access/report/index.html)
 
 `self_eq` summary:
-[![`self_eq`](runs/2025-08-29/self_eq/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2023-10-10/self_eq/report/index.html)
+[![`self_eq`](runs/2025-08-29/self_eq/report/lines.svg)](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2025-08-29/self_eq/report/index.html)
 
 See [more details](https://htmlpreview.github.io/?https://github.com/epage/string-benchmarks-rs/blob/master/runs/2025-08-29/self_eq/report/index.html)
 
