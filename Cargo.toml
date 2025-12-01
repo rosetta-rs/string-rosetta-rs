@@ -16,7 +16,7 @@ lean_string = "0.5.1"
 smartstring = "1.0.1"
 
 [dev-dependencies]
-criterion = { version = "0.7.0", features = ["html_reports"] }
+criterion = { version = "0.8.0", features = ["html_reports"] }
 
 [[bench]]
 name = "new"
