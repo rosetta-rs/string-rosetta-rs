@@ -44,11 +44,11 @@ fn bench_new(c: &mut Criterion) {
             b.iter(|| ecow::EcoString::from(fixture))
         });
         group.bench_with_input(
-            BenchmarkId::new("flexstr::SharedStr::from_ref", len),
+            BenchmarkId::new("flexstr::SharedStr::from_borrowed", len),
             &len,
             |b, _| {
                 let fixture = std::hint::black_box(*fixture);
-                b.iter(|| flexstr::SharedStr::from_ref(fixture))
+                b.iter(|| flexstr::SharedStr::from_borrowed(fixture))
             },
         );
         group.bench_with_input(BenchmarkId::new("HipStr::from", len), &len, |b, _| {
@@ -112,11 +112,11 @@ fn bench_new_static(c: &mut Criterion) {
             },
         );
         group.bench_with_input(
-            BenchmarkId::new("flexstr::SharedStr::from_static", len),
+            BenchmarkId::new("flexstr::SharedStr::Borrowed", len),
             &len,
             |b, _| {
                 let fixture = std::hint::black_box(*fixture);
-                b.iter(|| flexstr::SharedStr::from_static(fixture))
+                b.iter(|| flexstr::SharedStr::Borrowed(fixture))
             },
         );
         group.bench_with_input(
