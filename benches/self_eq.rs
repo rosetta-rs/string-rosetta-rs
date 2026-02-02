@@ -70,10 +70,10 @@ fn bench_self_eq(c: &mut Criterion) {
             b.iter(|| uut == copy)
         });
         group.bench_with_input(
-            BenchmarkId::new("flexstr::SharedStr::from_ref", len),
+            BenchmarkId::new("flexstr::SharedStr::from_borrowed", len),
             &len,
             |b, _| {
-                let uut = flexstr::SharedStr::from_ref(*fixture);
+                let uut = flexstr::SharedStr::from_borrowed(*fixture);
                 let uut = std::hint::black_box(uut);
                 let copy = uut.clone();
                 let copy = std::hint::black_box(copy);
@@ -174,10 +174,10 @@ fn bench_self_eq_static(c: &mut Criterion) {
             },
         );
         group.bench_with_input(
-            BenchmarkId::new("flexstr::SharedStr::from_static", len),
+            BenchmarkId::new("flexstr::SharedStr::Borrowed", len),
             &len,
             |b, _| {
-                let uut = flexstr::SharedStr::from_static(*fixture);
+                let uut = flexstr::SharedStr::Borrowed(*fixture);
                 let uut = std::hint::black_box(uut);
                 let copy = uut.clone();
                 let copy = std::hint::black_box(copy);

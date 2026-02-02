@@ -55,10 +55,10 @@ fn bench_access(c: &mut Criterion) {
             b.iter(|| uut.is_empty())
         });
         group.bench_with_input(
-            BenchmarkId::new("flexstr::SharedStr::from_ref", len),
+            BenchmarkId::new("flexstr::SharedStr::from_borrowed", len),
             &len,
             |b, _| {
-                let uut = flexstr::SharedStr::from_ref(*fixture);
+                let uut = flexstr::SharedStr::from_borrowed(*fixture);
                 let uut = std::hint::black_box(uut);
                 b.iter(|| uut.is_empty())
             },
@@ -139,10 +139,10 @@ fn bench_access_static(c: &mut Criterion) {
             },
         );
         group.bench_with_input(
-            BenchmarkId::new("flexstr::SharedStr::from_static", len),
+            BenchmarkId::new("flexstr::SharedStr::Borrowed", len),
             &len,
             |b, _| {
-                let uut = flexstr::SharedStr::from_static(*fixture);
+                let uut = flexstr::SharedStr::Borrowed(*fixture);
                 let uut = std::hint::black_box(uut);
                 b.iter(|| uut.is_empty())
             },
