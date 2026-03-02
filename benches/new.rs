@@ -35,6 +35,10 @@ fn bench_new(c: &mut Criterion) {
             let fixture = std::hint::black_box(*fixture);
             b.iter(|| arcstr::ArcStr::from(fixture))
         });
+        group.bench_with_input(BenchmarkId::new("ColdString::new", len), &len, |b, _| {
+            let fixture = std::hint::black_box(*fixture);
+            b.iter(|| cold_string::ColdString::new(fixture))
+        });
         group.bench_with_input(BenchmarkId::new("CompactString::new", len), &len, |b, _| {
             let fixture = std::hint::black_box(*fixture);
             b.iter(|| compact_str::CompactString::new(fixture))
