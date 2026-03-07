@@ -8,6 +8,10 @@ fn main() {
 
     println!("ArcStr {} bytes", std::mem::size_of::<arcstr::ArcStr>());
     println!(
+        "ColdString {} bytes",
+        std::mem::size_of::<cold_string::ColdString>()
+    );
+    println!(
         "CompactString {} bytes",
         std::mem::size_of::<compact_str::CompactString>()
     );

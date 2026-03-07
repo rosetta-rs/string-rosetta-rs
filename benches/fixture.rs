@@ -3,6 +3,8 @@ pub const SAMPLES: &[&str] = &[
     "",
     // Barely used
     "1",
+    // cold-string's max small-string size
+    "12345678",
     // kstring's max small-string size
     "123456789012345",
     // lean_string's max small-string size
