@@ -44,6 +44,11 @@ fn bench_access(c: &mut Criterion) {
             let uut = std::hint::black_box(uut);
             b.iter(|| uut.is_empty())
         });
+        group.bench_with_input(BenchmarkId::new("ColdString::new", len), &len, |b, _| {
+            let uut = cold_string::ColdString::new(fixture);
+            let uut = std::hint::black_box(uut);
+            b.iter(|| uut.is_empty())
+        });
         group.bench_with_input(BenchmarkId::new("CompactString::new", len), &len, |b, _| {
             let uut = compact_str::CompactString::new(fixture);
             let uut = std::hint::black_box(uut);
