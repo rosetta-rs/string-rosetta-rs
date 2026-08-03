@@ -7,7 +7,7 @@ publish = false
 [dependencies]
 arcstr = "1.2.0"
 cold-string = "0.2.0"
-compact_str = "0.9"
+compact_str = "0.10"
 ecow = "0.3.0"
 flexstr = "0.11.7"
 hipstr = "0.8.0"
