@@ -357,13 +357,13 @@ checksum = "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
 
 [[package]]
 name = "lean_string"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "385ba1b8a25159d816b62eea948cf3c6b38c5050c92ca901c570deead00316e5"
+checksum = "d8899d72720b5241f886495ea979d9641ebeec862248f5b65236c659670df9e6"
 dependencies = [
  "castaway",
  "itoa",
- "ryu",
+ "zmij",
 ]
 
 [[package]]
@@ -583,12 +583,6 @@ name = "rustversion"
 version = "1.0.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b39cdef0fa800fc44525c84ccb54a029961a8215f9619753635a9c0d2538d46d"
-
-[[package]]
-name = "ryu"
-version = "1.0.23"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9774ba4a74de5f7b1c1451ed6cd5285a32eddb5cccb8cc655a4e50009e06477f"
 
 [[package]]
 name = "same-file"
